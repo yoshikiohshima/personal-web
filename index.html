@@ -1,0 +1,362 @@
+<html>
+  <head>
+      <title>Yoshiki's Page</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+      <h1 class="top-name">Yoshiki Ohshima (Ph.D.) </h1>
+      <h2>Computer Scientist/Software Engineer</h2>
+      <article>
+
+      <p>
+	  Hi!
+      </p>
+      <p>
+	  I have been working on programming languages, programming environments, system architecture design. I also have served many academic conferences as the program committee member.
+      </p>
+      <p>
+At the graduate school of Tokyo Institute of Technology, I was working on an optimizing compiler project, and also a research prototype of a programming language with nested transactions. It was fine... But I was not aware of big pictures on the field of computing. It all changed when an interesting twist changed the course of my life.
+      </p>
+
+      <div class="section">
+	  <h3>Software Projects</h3>
+	  <div class="project" id="rie-jun">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./rie-jun.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>Rie and Jun compiler construction project (1993-):</h4>
+		  Under supervision of Professor Masataka Sassa, I worked on a compiler construction project. The project's aim was to write all stages of an optimizing compiler in declarative forms, especially in various variations of Attribute Grammar.
+		  <ul>
+		      <li>
+			  <a href="https://link.springer.com/chapter/10.1007/3-540-53669-8_74">Rie and Jun</a></li>
+		      </ul>
+	      </div>
+	  </div>
+	  <div class="project" id="harmony">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./harmony.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>The Harmony/2 Language (1995-)</h4>
+		  Under supervision of Dr. Ken Wakita, I worked on an object-oriented language with nested transaction.
+		  <ul>
+		      <li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7372&rep=rep1&type=pdf">Concurrent Transactions and Communicators: Extensible Synchronization Mechanisms for Distributed Programming</a></li>
+		  </ul>
+	      </div>
+	  </div>
+	  <div class="project" id="squeak">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./squeak.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>Squeak Smalltalk (1997-):</h4>
+		  While I was studying progrmminng languages at graduate school, I went to OOPSLA in Atlanta as a student volunteer. An interesting twist of fate got me in touch with John Maloney of the Squeak Team (via Prof Satoshi Matsuoka) at the reception hall, and Prof. Matsuoka volunteered me to try porting the Squeak proogrmming system to a PDA called Sharp Zaurus that Prof. Matsuoka was carrying. Up to that point, I was familiar with Emacs and had some sense that an interactive and scriptable computing system is good, but I was totally blown away that really the entire system can be all uniformly written in a dynamic system.  Since then, many things I do in computing are influenced by the notion of whole system design, dynamic modification of a living system and education aspect of computing all comes with Smalltalk and Squeak.
+		  <ul>
+		      <li><a href="https://squeak.org">Squeak</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="zauchu">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./zauchu.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>Porting Squeak to Zaurus PDA (1998):</h4>
+Squeak was designed to work on wide variety of hardware platforms, including low-power handheld devices. I started working on porting Squeak to Zaurus, and thanks to lucky coincidence, such as Sharp just released a public SDK timely, and the memory foot print requirement of very minimum Squeak was just barely small enough to fit within the latest Zaurus model, and of course the software architecture of Sqeuak was very portable, I managed to make the port work. I was inviated by Dr. Alan Kay's group to visit Walt Disney Imagineering R & D and to OOPSLA. (It was also my first occasion to make a transit at an airport, and I missed the plane.)
+		  <ul>
+		      <li><a href="https://www.ogis-ri.co.jp/otc/hiroba/others/OORing/interview04.html">An interview on the port</a></li>
+		      <li><a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_action_common_download&item_id=16912&item_no=1&attribute_id=1&file_no=1&page_id=13&block_id=8">A paper on the port</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="netfront">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./netfront.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>Porting NetFront Web browser to Zaurus PDA (2000):</h4>
+		  The ACCESS company was spearheading the mobile web industry with their NetFront browser. Not unlike Squeak, NetFront was architected so that it can be ported to a new platform by supplying platform-dependent code. I blatantly re-purposed some of the code I wrote for Squeak to the NetFront browser. But hey, it is open source and I wrote it.
+	      </div>
+	  </div>
+
+	  <div class="project" id="parkspda">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./parkspda.png"></img>
+		  </div>
+	      <div class="project-explanation">
+		  <h4>Parks PDA(2000):</h4>
+		  Walt Disney Imagineering R&D was interested in the emerging portable electronic devices (Personal Digital Assistants). Around that time, the Zaurus PDA from the Sharp Corporation in Japan had a unique device that had 1) an out-door viewable color screen, 2) enough performance to play audio and frame-based animation at the quality that Disney requires, 3) an external storage slot to store media-rich content, and most notably 4) a dynamic object system called Squeak that allowed us to make a new custom user interface framework that in tur allowed the designers to create high quality content quickly.
+
+		  <ul>
+		      <li><a href="http://www.vpri.org/pdf/tr2003002_parkspda.pdf">The Parks PDA: A Handheld Device for Theme Park Guests in Squeak</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="stitch">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./stitch.jpg"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Stitch's Photo Phone (2002):</h4>
+		  This is an experimental of a new interactive theme park attraction. In a phone booth large enough to fit a family, we put a large flat screen as one of the walls. A cast member can puppet a 3D character (Stitch) real time with a game controller and chat with the family, and at the end of a short session, Stitch takes a photo of the family, and give a printed version the family. I worked on the code that captures the image from a hidden video camera. The experiment won the 10th annual Themed Entertainment Association Award.
+	      </div>
+	  </div>
+
+	  <div class="project" id="etoys">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./etoys.png"></img>
+		  </div>
+	      <div class="project-thumbnail">
+		  <h4>Etoys (2003):</h4>
+		  At Disney, I was officially working on other projects (like the ones mentioned above and others) than Squeak (though I was using it for some projects and contributed to it). The 9/11 attack also hit the bottom line of the Disney company, and the Squeak team eventually were laid off. I wask kept a bit longer but eventually also let go. I would have to return to Japan but thanks to Dr. Masanobu Matsuo, I got a positioon at a company called Twin Sun. At Twin Sun. I then was even more closely involved in the projects at Viewpoints Research which Alan Kay and Kim Rose founded. A major project was Etoys, which is the end-user authoring environment (built on top of Squeak). From around this time, I was involved in improving and extending Etoys and over time took the leading role of the project.
+	      </div>
+	  </div>
+
+	  <div class="project" id="kedama">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./kedama.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Kedama (2005):</h4>
+		  Following Mitch Resnick's StarLogo and StarSqueak by John Maloney. I created a massively parallel particle simulation system that is integrated with Etoys. In this way, thousands of particles can be controlled by Etoys block scripting and their behavior can be changed on the fly.  This was the basis of my Ph.D. thesis.
+		  <ul>
+		      <li><a href="http://www.vpri.org/pdf/tr2005001_ohshima_kedama.pdf">Kedama: A GUI-based Interactive Massively Parallel Particle Programming System</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="squeak-croquet">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./squeak-croquet.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Squeak Version of Croquet (2006):</h4>
+		  While working on Squeak, my colleagues David Smith, Andreas Raab, David Reed and Alan Kay started a realtime 3D collaboration environment called Croquet. I was on and off contributing to it, (I even wrote a Paxos protoype implementation during the exploration phase). Some ideas were made into papers and published.
+		  <ul>
+		      <li><a href="https://www.computer.org/csdl/proceedings-article/c5/2005/23250050/12OmNxWuiiU">Filters and Tasks in Croquet</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="tweak">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./tweak.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Tweak (2006):</h4>
+		  Andreas Raab led the effort to create a language system called Tweak One of the goals of Tweak was to make a new generation of Etoys. I created a version of particle system, and helped debugging the end-user program editing system in Tweak.
+	      </div>
+	  </div>
+
+	  <div class="project" id="olpc">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./olpc.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Etoys for OLPC (2008-):</h4>
+		  The OLPC (One Laptop per Child) project aimed to create an inexpensive laptop that is designed to help children around the world. Our group was involved in some early discussion of the planning and software design. There was an idea to put Squeak as the main platform for the laptop so that the user (chidren) can engage a "learning by doing" style activity. Though that plan did not pan out, we put considerable effort to make the Etoys run as an application.  Because there were not much applications for OLPC where users can actually make things, Etoys was popular for certain teachers and learners.  I was taking the leading role of the effort.
+		  <ul>
+		      <li><a href="http://wiki.laptop.org/go/Smalltalk_Development_on_XO">Smalltalk development on OLPC</a></li>
+		      <li><a href="http://www.vpri.org/pdf/tr2009001_etoys4olpc.pdf">Etoys for One Laptop Per Child</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="steps">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./steps.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>The STEPS Project (2007-2013):</h4>
+		  Viewpoints Research received a 5-year grant from the National Science Foundatation to demonstrate the idea that the kernel for the entire personal computing system should be written in just about 20,000 lines of code.  That includes the compiler, the network driver, the memory management system, the graphics system, text formatting algorithm, application framework and applications. It was a large group effort.  I took on the application framework that is inspired by Functional Reactive Programming, with a twist of allowng dynamic modification of running code. Also, we designed it so that all "applications" on the framework can be embedded into another. The declarative nature of reactive descriptionn, and not having distinction between application and widgets allowed as to make a universal authorinng application.
+		  <ul>
+		      <li><a href="http://www.vpri.org/pdf/rn2006002_nsfprop.pdf">The STEP Project proposal</a></li>
+		      <li><a href="http://www.vpri.org/pdf/tr2013002_KSonward.pdf">The GUI framework for the STEP project</a></li>
+		      </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="gp">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./gp.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>GP (2013-)</h4>
+		  With John Maloney and Jens Moenig, I worked on a new blocks-based programming system Project called GP. Three of us had considerable experiences in making various end-user programming systems, but we had been bothered by the fact that none of those system we created were truly "general purpose" in a sense that it is powerful enough to write complex applications including itself. John Maloney was the lead and I worked on various parts such as designing a module system, porting the virtual machine to 64-bit platforms, etc.
+		  <ul>
+		      <li><a href="https://gpblocks.org/">GP: General Purpose Blocks Language</a></li>
+		      <li><a href="http://www.vpri.org/pdf/tr2015003_modsys.pdf">A Module System for a General-Purpose Blocks Language</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="kanto">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./kanto.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Kanto (2017)</h4>
+		  I was always interested in a collaborative work on computer especially making something together or learing from each other. I thought that a screensharing via WebRTC and a channel channel where a remote user can send events, we can create a collaborative environment for different blacks-based editors. I modified the Snap! editor to allow multiple pointers and hook up the WebRTC based collaboration system to have a functional collaborative blocks-eiting environment. The same collaboration framework can be used to make SqueakJS and web version of GP collaborative as well.
+		  <ul>
+		      <li><a href="http://www.vpri.org/pdf/kanto-framework.pdf">Kanto: A Multi-participant Screen-Sharing System for Etoys, Snap!, and GP</a></li>
+		  </ul>
+	      </div>
+	  </div>
+	      
+	  <div class="project" id="shadama">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./shadama.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Shadama (2017):</h4>
+		  I got an urge to make a yet another particle simulation system where program can be modified while a simulation is running. Web browsers have the bindings to the GPU via WebGL to enable some form of General Purpose GPU programming (GPGPU) and JavaScript allows live programming. The result is Shadama.
+
+		  <ul>
+		      <li><a href="http://tinlizzie.org/~ohshima/shadama2/live2017/">Shadama: A Particle Simulation Programming Environment for Everyone</a></li>
+		      <li><a href="https://www.tele-task.de/lecture/video/6785/">Talk on Shadama and Croquet at Hasso Platner Institute</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="machine-learing">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./machine-learning.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>Machine Learning (2018-2019):</h4>
+		  I worked on the preparation and the exploration phase of the Vianai company. The goal of the work was to understand the current machine learning trends, and also create some explorable AI prototypes. I closely worked with Dr. Vishal Sikka to create explorable AI demos. When the company is officially launched, I continued to work as a contractor at Vianai. I contributed to the  demo that Vishal and Dan Amelang showed at the Oracle Open World event.
+
+		  <ul>
+		      <li><a href="https://www.youtube.com/watch?v=8Kqn0AunWh0">Vianai's demo at the Oracle Open World 2019</a></li>
+		  </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="croquet">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./croquet.png"></img>
+	      </div>
+	      <div class="project-thumbnail">
+		  <h4>JavaScript version of Croquet (2017-):</h4>
+		  When Y Combinator Research could no longer support the research activity, David Smith and some of my colleagues formed a start up company. The main goal was to have real time collaboration technology going on the Web. The fundamental algorithm was devised by the earlier Croquet group done in Smalltalk. We reimplemented the algorithm for JavaScript, and created an SDK so that anybody can create a real time collaborative application. While the SDK provides good foundation, making a larger applications that require dynamic DOM manipulation and scriping them needs a higher level application framework. I spearheaded the effort to make the application framework. I also architected and wrote majority of code of the shared space application called Q.
+		  <ul>
+		      <li><a href="https://github.com/croquet/virtual-dom">Croquet Virtual DOM Framework</a></li>
+		      <!-- <li><a href="https://croquet.io/q">Croquet Q Collaboration Platform</a></li> -->
+		  </ul>
+	      </div>
+	  </div>
+      </div>
+	  
+      <div class="section">
+	  <h4>Books and Other Documents</h4>
+	  <div class="project" id="powerful-ideas">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./powerful-ideas.png"></img>
+	      </div>
+	      <div class="project-explanation">
+		  <h4>Japanese translation of "Powerful Ideas in classrooms" (2005)</h4>
+		  I helped publishing the Japanese translation of "Powerful Ideas in classrooms" This is a book on Squeak Etoys and it focuses on what "powerful ideas" that an interactive computing environment like Etoys can teach. The main theme is that an idea that representing gravity in a discrete differential form is easier for children to understand and with help from computer they can actually manipualte it interactively.
+		  <ul>
+		      <li><a href="https://www.amazon.com/dp/0974313106">Amazon link to "Powerful Ideas in the Classroom"</a></li>
+		      <li><a href="https://www.amazon.co.jp/dp/4872902114">The Japanese version</a></li>
+		      </ul>
+	      </div>
+	  </div>
+
+	  <div class="project" id="inventive-minds">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./inventive-minds.jpeg"></img>
+	      </div>
+	      <div  class="project-explanation">
+		  <h4>Japanese translation of "Inventive Minds" (2020)</h4>
+		  The original book was "Inventive Minds" but I was involved in the original book project somewhat. The book is a compilation of essays by Marvin Minsky, and each essay is accompanied by an article writte by Marvins firends and collaborators. Alan wrote an elaborated essay that he wants to have dynamic interactive programming elements. The paper version of the book cannot contain it (obviously) but with John Maloney, we created the "active essay" version of Alan's article. Mr. Kazuhiro Abe connected the O'Reilly Japan to me, and I agreed to take on the translation work.
+		  <ul>
+		      <li><a href="https://mitpress.mit.edu/books/inventive-minds">link to the MIT Press</a></li>
+		      <li><a href="https://www.oreilly.co.jp/books/9784873119007/">link to the Japanese version</a></li>
+		      <li><a href="https://tinlizzie.org/tinkertoy">link to the Active Essay</a></li>
+		  </ul>
+	      </div>
+	  </div>
+	  
+	  <div class="project" id="intelligent-archive">
+	      <div class="image-holder">
+		  <img class="project-thumbnail" src="./intelligent-archive.png"></img>
+	      </div>
+	      <div  class="project-explanation">
+		  <h4>Viewpoints Intelligent Archive (2018-)</h4>
+		  I am interested in the history of computing. Viewpoints Research Insitute had over one thousand video tapes from 70's and on. Many of those tapes are Alan Kay's talks but they include some internal meetings of Apple ATG, and Walt Disney Imagineering, etc. I have digitized all content and archived. Some of those movies are uploaded to my channel of YouTube. I maintain a web site called <a href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>. that lists available movies of talks by Alan, and papers by Alan and other Viewpoints folks, including myself.
+
+		  <ul>
+		      <li><a href="https://www.youtube.com/channel/UCkdJ2NwjI8LcgyvfU7PyaVA"> The YouTube Channel</a></li>
+		      <li> <a href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a></li>
+		  </ul>
+	      </div>
+	  </div>
+      </div>
+
+      <div class="section">
+	  <h3>Academic Activity</h3>
+	  <p>
+	      I have published and presented papers at international and domestic conferences and workshops. Also, I have served as a program committee for various conferences.
+	  </p>
+	  <p>
+	  It is suffice to put a link to <a href="https://scholar.google.com/citations?user=Boq_L4sAAAAJ&hl=ja&oi=ao">my Google Scholar page</a>. Some papers I authored or co-authored are referenced quite often.
+	  </p>
+
+	  Here is the (partial) list of conference and workshops I served as program committee.  The C5 conferences were "ours" in the sense tht Viewpoints was organizing it. But others invite me to join because (I think) I tend to provide details reviews with technical and historical contexts that are different from typical reviewers provide.  (But it appears that I do more reviewing recently and less writing my own.)
+
+	  <ul>
+	      <li>The Sixth International Conference on Creating, Connecting and Collaborating through Computing (C5 2008)</li>
+	      <li>The Seventh International Conference on Creating, Connecting and Collaborating through Computing (C5 2009)</li>
+	      <li>The Eighth International Conference on Creating, Connecting and Collaborating through Computing (C5 2010)</li>
+	      <li>The Ninth International Conference on Creating, Connecting and Collaborating through Computing (C5 2011)</li>
+	      <li>The Tenth International Conference on Creating, Connecting and Collaborating through Computing (C5 2012)</li>
+	      <li>3rd International Workshop on Programming based on Actors, Agents, and Decentralized Control 2013</li>
+	      <li>Onward! Conference 2013</li>
+	      <li>Future of Programming Workshop 2015</li>
+	      <li>8th Workshop on Dynamic Languages and Applications 2014</li>
+	      <li>1st International Constrained and Reactive Objects Workshop 2016</li>
+	      <li>3th Workshop on Reactive and Event-based Languages & Systems 2017</li>
+	      <li>International Workshop on Smalltalk Technologies 2016</li>
+	      <li>Programming Experience Workshop 2016</li>
+	      <li>The 22nd International Conference on Distributed Multimedia Systems 2016</li>
+	      <li>Programming Experience Workshop 2017</li>
+	      <li>International Workshop on Smalltalk Technologies 2017</li>
+	      <li>4th Workshop on Reactive and Event-based Languages & Systems 2017</li>
+	      <li>Blocks and Beyond: 2nd Workshop on Lessons and Directions for First Programming Environments 2017</li>
+	      <li>Programming Experience Workshop 2017.2</li>
+	      <li>Programming Experience Workshop 2018</li>
+	      <li>5th Workshop on Reactive and Event-based Languages & Systems 2018</li>
+	      <li>Programming Experience Workshop 2019</li>
+	      <li>Blocks and Beyond 2019: Beyond Blocks</li>
+	      <li>6th Workshop on Reactive and Event-based Languages & Systems 2019</li>
+	      <li>Programming Experience Workshop 2020</li>
+	      <li>Symposium on Visual Languages and Human-Centric Computing 2020</li>
+	      <li>Onward! Conference 2020</li>
+	      <li>7th Workshop on Reactive and Event-based Languages & Systems 2020</li>
+	  </ul>
+      </div>
+
+      <div class="section">
+	  <h3>Other Interests and Activities</h3>
+	  <p>
+	      I play various sports, but volleyball was the most serious one.  I played it since middle school and played for the college versity team (even though it was a geek's tech college, it was quite ompetitive).
+	  </p>
+
+	  <p>
+	      I am an assistant coach for a U-12 soccer team. I watch a lot of soccer games but don't have real experience, though.
+	  </p>
+
+	  <p>
+	      I teach a STEM class for high school students at a Japanese Saturday school in Los Angeles. I pick a topic from wide variety of fields, and often try to use interactive computer based explanations.
+	  </p>
+
+      </div>
+      </article>
+  </body>
+</html>
