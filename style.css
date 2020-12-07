@@ -7,12 +7,18 @@ h1,h2 {
     text-align: right;
 }
 
+h3 {
+    color: #2b77a5
+}
+
 h4 {
     color: #2b77a5
 }
 
 body {
-    background-color: #f2f2f3;
+    background-color: white;
+    background-image: url(background.svg);
+    background-repeat: repeat;
     font-family: Georgia,'Verdana',"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
 }
 
@@ -25,9 +31,10 @@ body {
 
     position: fixed;
     top: 0px;
-    width: 220px;
+//    width: 220px;
 
     display: flex;
+    background-color: white;
 }
 
 .menu > div {
@@ -46,7 +53,7 @@ body {
     margin-right: 100px;
 }
 
-p {
+p.non-project {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
@@ -54,9 +61,9 @@ p {
 }
 
 .project {
-    background-color: #eeeef3;
+    background-color: #f8f8f2;
     display: flex;
-    margin: 10px;
+    margin: 40px 10px 40px 10px;
     border: 1px solid #888888;
     border-radius: 8px;
 }
@@ -82,11 +89,33 @@ p {
     margin: 10px;
 }
 
+.toc-button {
+}
+
 .toc-button:hover {
     cursor: pointer;
-    font-weight: 600;
+    color: #874040;
+    text-decoration: underline;
 }
 
 li {
-    color: #3d13a0;
+    color: #670000;
+}
+
+hr.section-hr {
+    border: none;
+    border-top: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-top: 50px;
+}
+
+hr.section-hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
