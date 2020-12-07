@@ -20,6 +20,7 @@ body {
     background-image: url(background.svg);
     background-repeat: repeat;
     font-family: Georgia,'Verdana',"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
+    line-height: 1.4;
 }
 
 .article {
@@ -74,7 +75,7 @@ p.non-project {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -82,6 +83,7 @@ p.non-project {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    margin: 8px;
 }
 
 .project-explanation {
