@@ -6,6 +6,36 @@
   </head>
   <body>
       <script src="./move.js" type="text/javascript"></script>
+
+      <!-- <script src="https://croquet.io/sdk/croquet-latest.min.js"></script>
+      <script src="./turner.js"></script> -->
+      <script type="text/javascript">
+	  if (window.location.search !== "") {
+	      let p1, p2, s1, s2;
+	      new Promise((resolve) => {
+		  s1 = document.createElement("script");
+		  s1.src = "https://croquet.io/sdk/croquet-latest.min.js";
+		  s1.onload = resolve;
+		  document.body.appendChild(s1);
+	      }).then(() => {
+		  return new Promise((resolve) => {
+		      s2 = document.createElement("script");
+		      s2.src = "./turner.js";
+		      s2.onload = resolve;
+		      document.body.appendChild(s2);
+		  });
+	      }).then(() => {
+		  Croquet.Session.join(window.location.href, SimplePageModel, SimplePageView, {tps: 0})
+    		      .then((session) => session.view.initCroquetMessenger());
+	      });
+	  } else {
+	      let style = document.createElement("style");
+	      style.innerHTML = "html {scroll-behavior: smooth;";
+	      document.body.appendChild(style);
+	  }
+	  
+      </script>
+      
       <div class="article">
 	  <div class="sidebar">
 	      <div class="menu">
@@ -319,7 +349,7 @@ Viewpoints Research received a 5-year grant from the National Science Foundation
 		      </div>
 		      <div  class="project-explanation">
 			  <h4>Japanese translation of “Inventive Minds” (2020)</h4>
-			  I translated the “Inventive Minds” book. But I was also involved in the original book project. The book is a compilation of essays by Marvin Minsky, and each essay is accompanied by an article written by Marvin's friends and collaborators. Alan wrote an elaborated essay that he wants to have dynamic interactive programming elements. The paper version of the book cannot contain it (obviously) but with John Maloney, we created the “active essay” version of Alan's article. My long time friend <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/%E9%98%BF%E9%83%A8-%E5%92%8C%E5%BA%83/e/B00DUV6S3E">Mr. Kazuhiro Abe</a> connected the O'Reilly Japan to me, and I agreed to take on the translation work.
+			  I translated the “Inventive Minds” book. However, I was also involved in the original book project. The book is a compilation of essays by Marvin Minsky, and each essay is accompanied by an article written by Marvin's friends and collaborators. Alan wrote an elaborated essay that he wants to have dynamic interactive programming elements. The paper version of the book cannot contain it (obviously) but with John Maloney, we created the “active essay” version of Alan's article. My long time friend <a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/%E9%98%BF%E9%83%A8-%E5%92%8C%E5%BA%83/e/B00DUV6S3E">Mr. Kazuhiro Abe</a> connected the O'Reilly Japan to me, and I agreed to take on the translation work.
 			  <ul>
 			      <li><a target="_blank" rel="noopener noreferrer" href="https://mitpress.mit.edu/books/inventive-minds">link to the MIT Press</a></li>
 			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.oreilly.co.jp/books/9784873119007/">link to the Japanese version</a></li>
@@ -334,7 +364,7 @@ Viewpoints Research received a 5-year grant from the National Science Foundation
 		      </div>
 		      <div  class="project-explanation">
 			  <h4>Viewpoints Intelligent Archive (2018-)</h4>
-			  I am interested in the history of computing. Viewpoints Research Institute had over one thousand of video tapes from the 70's and on. Many of those tapes are Alan Kay's talks but they include some internal meetings of Apple ATG, and Walt Disney Imagineering, etc. I have digitized all content and archived. Some of those movies are uploaded to my channel on YouTube. I maintain a web site called <a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>. that lists available movies of talks by Alan, and papers by Alan and other Viewpoints folks, including myself.
+			  I am interested in the history of computing. Viewpoints Research Institute had over one thousand video tapes from the 70's and on. Many of those tapes are Alan Kay's talks but they include some internal meetings of Apple ATG, and Walt Disney Imagineering, etc. I have digitized all content and archived. Some of those movies are uploaded to my channel on YouTube. I maintain a web site called <a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>. that lists available movies of talks by Alan, and papers by Alan and other Viewpoints folks, including myself.
 
 			  <ul>
 			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCkdJ2NwjI8LcgyvfU7PyaVA"> The YouTube Channel</a></li>
@@ -349,14 +379,15 @@ Viewpoints Research received a 5-year grant from the National Science Foundation
 	      <div class="section">
 		  <h3>Academic Activity</h3>
 		  <p>
-		      I have published and presented papers at international and domestic conferences and workshops. Also, I have served as a program committee for various conferences.
+		      I have published and presented papers at international and domestic conferences and workshops. I have also served on a program committee for various conferences.
 		  </p>
 		  <p>
-		      It is suffice to put a link to <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Boq_L4sAAAAJ&hl=ja&oi=ao">my Google Scholar page</a>. Some papers I authored or co-authored are referenced quite often.
+		      It is sufficient to put a link to <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Boq_L4sAAAAJ&hl=ja&oi=ao">my Google Scholar page</a>. Some papers I authored or co-authored are referenced quite often.
 		  </p>
 
 		  <p>
-		      Here is the (partial) list of conferences and workshops I served on the program committee. The C5 conferences were “ours” in the sense that Viewpoints was organizing it. But others invite me to join because (I think) I tend to provide detailed reviews with technical and historical contexts that are different from what typical reviewers provide. (While making this list, it appears that I have been more reviewing recently and less writing my own.)
+		      Here is the (partial) list of conferences and workshops I served at on the program committee. The C5 conferences were “ours” in the sense that Viewpoints was organizing it. But others invite me to join because (I think) I tend to provide detailed reviews with technical and historical contexts that are different from what typical reviewers provide. (While making this list, it appears that I have been more reviewing recently and less writing my own.)
+
 		  </p>
 		  
 		  <ul>
@@ -409,12 +440,14 @@ Tokyo Institute of Technology. Project: Designing and developing an end-user pro
 		  </ul>
 
 		  As you can see these are all from the same college and actually from the same group. (It is not uncommon in Japan). I was enrolled in the Ph.D course after I finished my masters degree but I took a leave of absence during the course. Japanese universities have a system where a person has enough to show, they can still award a Ph.D. to an applicant. I took an advantage of it and got the degree on a topic that was different from what I would have done if I stayed.
+
 	      </div>
 
 	      <div class="section">
 		  <h3 id="employment">Employment</h3>
 		  <p>
 		      And here is my past and current employers and the title of the position.  It may appear that I am changing the job often but it is not actually the case, Viewpoints Research Institute, SAP Labs, and Y Combinator Research are basically the same group but sponsored by different benefactors, grants and companies.  It was the time period the core group stayed together to achieve the same goal.
+
 		  </p>
 
 		  <ul>
@@ -437,19 +470,21 @@ Tokyo Institute of Technology. Project: Designing and developing an end-user pro
 	      <div class="section">
 		  <h3 id="other">Other Interests and Activities</h3>
 		  <p>
-		      I play various sports, but volleyball was the most serious one.  I played it since middle school and played for the college varsity team (even though it was a geek's tech college, it was quite competitive).
+I play various sports, but volleyball was the most serious one.  I played it since middle school and played for the college varsity team (even though it was a geek's tech college, it was quite competitive).
 		  </p>
 		  
 		  <p>
-		      I am an assistant coach for a U-12 soccer team. I watch a lot of soccer games but don't have real experience, though.
+I am an assistant coach for a U-12 soccer team. I watch a lot of soccer games but don't have real experience, though.
 		  </p>
 
 		  <p>
 		      I teach a STEM class for high school students at a Japanese Saturday school in Los Angeles. I pick a topic from a wide variety of fields, and often try to use interactive computer based explanations.
+
 		  </p>
 
 		  <p>
-		      I am on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/yoshikiohshima">Twitter</a> and I write something perhaps once a week or so. Around 2019, I was writing an answer a day or so on <a target="_blank" rel="noopener noreferrer" href="https://jp.quora.com/profile/%E5%A4%A7%E5%B3%B6-%E8%8A%B3%E6%A8%B9-Yoshiki-Ohshima">Quora</a> but the rate of contribution is much lower in 2020. I have the <a target="_blank" rel="noopener noreferrer" href="https://squeaker.hatenablog.com/">hatena blog</a>. I used to update it once a day.. but now it is mostly dormant.
+		      I am on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/yoshikiohshima">Twitter</a> and I write something about once a week or so. Around 2019, I was writing an answer a day or so on <a target="_blank" rel="noopener noreferrer" href="https://jp.quora.com/profile/%E5%A4%A7%E5%B3%B6-%E8%8A%B3%E6%A8%B9-Yoshiki-Ohshima">Quora</a> but the rate of contribution is much lower in 2020. I have the <a target="_blank" rel="noopener noreferrer" href="https://squeaker.hatenablog.com/">hatena blog</a>. I used to update it once a day... but now it is mostly dormant.
+
 		      </p>
 	      </div>
 
