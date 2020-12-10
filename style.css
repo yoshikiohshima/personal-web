@@ -42,9 +42,9 @@ body {
 }
 
 .gradient {
-    width: 30px;
+    width: 50px;
     height: 100vh;
-    background-image: linear-gradient(to right, #cfd2dc, #f7faff);
+    background-image: linear-gradient(to right, #e4e6ef94, #eceef136);
 }
 
 .content {
