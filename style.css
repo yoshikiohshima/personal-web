@@ -16,7 +16,7 @@ h4 {
 
 body {
     background-color: white;
-    background-image: url(background.svg);
+    //background-image: url(background.svg);
     background-repeat: repeat;
     font-family: Georgia,'Verdana',"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
     line-height: 1.4;
@@ -61,10 +61,10 @@ p.non-project {
 }
 
 .project {
-    background-color: #f8f8f2;
+    background-color: #eef2f7;
     display: flex;
     margin: 40px 10px 40px 10px;
-    border: 1px solid #888888;
+    //border: 1px solid #888888;
     border-radius: 8px;
 }
 
