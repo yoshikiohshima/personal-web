@@ -131,7 +131,7 @@ hr.section-hr:after {
 }
 */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .image-holder {
 	width: 100px;
 	min-width: 100px;
