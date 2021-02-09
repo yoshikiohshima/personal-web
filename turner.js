@@ -77,11 +77,11 @@ class SimplePageView extends Croquet.View {
         if (Math.abs(this.ratio - ratio) < 0.001) {return;}
         let now = Date.now();
         // console.log("lastSetTime", this.lastSetTime, now - this.lastSetTime);
-        if (now - this.lastSetTime < 50) {return;}
+        if (now - this.lastSetTime < 100) {return;}
         this.toBePublished = ratio;
         let diff = now - this.lastPublishTime;
         // console.log("ratio", this.ratio, ratio, diff);
-        if (diff < 30) {
+        if (diff < 100) {
             if (!this.timer) {
                 this.timer = window.setTimeout(() => this.publishPosition(), 30);
             }
