@@ -83,7 +83,7 @@ class SimplePageView extends Croquet.View {
         // console.log("ratio", this.ratio, ratio, diff);
         if (diff < 100) {
             if (!this.timer) {
-                this.timer = window.setTimeout(() => this.publishPosition(), 30);
+                this.timer = window.setTimeout(() => this.publishPosition(), 100);
             }
             return;
         }
