@@ -14,19 +14,18 @@
 	      let p1, p2, s1, s2;
 	      new Promise((resolve) => {
 		  s1 = document.createElement("script");
-		  s1.src = "https://croquet.io/sdk/croquet-latest.min.js";
+		  s1.src = "https://unpkg.com/@croquet/croquet";
 		  s1.onload = resolve;
 		  document.body.appendChild(s1);
 	      }).then(() => {
 		  return new Promise((resolve) => {
 		      s2 = document.createElement("script");
-		      s2.src = "./turner.js";
+		      s2.src = "https://unpkg.com/page-synchronizer@1.0.1";
 		      s2.onload = resolve;
 		      document.body.appendChild(s2);
 		  });
 	      }).then(() => {
-		  Croquet.Session.join(window.location.href, SimplePageModel, SimplePageView, {tps: 0})
-    		      .then((session) => session.view.initCroquetMessenger());
+		  SimplePageView.start({apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg"});
 	      });
 	  } else {
 	      let style = document.createElement("style");
@@ -548,7 +547,7 @@ Tokyo Institute of Technology. Project: Designing and developing an end-user pro
 	      </div>
 
 	      <hr>
-	      <div style="text-align: right">Last updated: 2021-09-08</div>
+	      <div style="text-align: right">Last updated: 2021-09-11</div>
 	  </div>
       </div>
   </body>
