@@ -25,7 +25,10 @@
 		      document.body.appendChild(s2);
 		  });
 	      }).then(() => {
-		  SimplePageView.start({apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg"});
+		  SimplePageView.start({
+		      apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg",
+		      eventRateLimit: 60
+		  });
 	      });
 	  } else {
 	      let style = document.createElement("style");
