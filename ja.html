@@ -21,7 +21,7 @@
 	      }).then(() => {
 		  return new Promise((resolve) => {
 		      s2 = document.createElement("script");
-		      s2.src = "https://unpkg.com/page-synchronizer@1.0.3";
+		      s2.src = "https://unpkg.com/page-synchronizer@1.0.5";
 		      s2.onload = resolve;
 		      document.body.appendChild(s2);
 		  });
@@ -367,11 +367,14 @@
 			  <p>
 			      ただ、このSDKは基盤としてはしっかりしたものであるものの、大きなアプリケーション、特に動的なDOM要素の操作やスクリプティングを必要とするようなものを書くにはちょっと抽象化の水準が低すぎるので、私は同僚からの多大な支援も受け、仮装DOMに基づいたアプリケーション・フレームワークを設計・実装しました。また、そのフレーム枠を使ったGreenlight (旧称Q)という本格的共有アプリケーションも開発中です。
 			  </p>
+			  <p>
+			    さらに2021年の終わりから、Croquetでは3次元共有環境のCroquet Microverseを作り始めました。Microverseは、参加している複数のユーザーが自分達の世界を、世界の中から作っていけるというシステムです。
 			  <ul>
 			      <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/croquet/virtual-dom">Croquet Virtual DOM Framework</a></li>
 			      <li><a target="_blank" href="https://croquet.io/greenlight">Croquet Greenlight</a></li>
 			      <li><a target="_blank" href="https://youtu.be/kn8TZdgYMWc?t=287">Greenlightのデモ。字幕もあります。</a></li>
-			      
+o			      <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kKes">A demo of Croquet Microverse. (英語字幕あり)</a></li>
+			      <li><a target="_blank" href="https://www.youtube.com/watch?v=rc27d61EDro">A demo of Croquet Microverse. (California Smalltalkers Meetupで行ったもの。英語です)</a></li>
 			  </ul>
 		      </div>
 		  </div>
@@ -552,7 +555,7 @@
 	      </div>
 
 	      <hr>
-	      <div style="text-align: right">Last updated: 2022-09-03</div>
+	      <div style="text-align: right">Last updated: 2022-11-12</div>
 	  </div>
       </div>
   </body>
