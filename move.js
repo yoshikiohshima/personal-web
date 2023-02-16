@@ -6,7 +6,7 @@ function addHandlers() {
         let elem = document.getElementById(id);
         if (!elem) {return;}
         elem.addEventListener("click", () => {
-            let hyphen = id.indexOf("-");
+            let hyphen = id.lastIndexOf("-");
             moveTo(id.slice(0, hyphen));
         });
     });
