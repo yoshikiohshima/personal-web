@@ -132,6 +132,11 @@ hr.section-hr:after {
 }
 */
 
+#qr {
+    width: 80px;
+    height: 80px;
+}
+
 @media only screen and (max-width: 1000px) {
     .image-holder {
 	width: 100px;
@@ -180,4 +185,5 @@ hr.section-hr:after {
     .sidebar {
 	font-size: 12px;
     }
+
 }

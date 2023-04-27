@@ -4,28 +4,23 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="style.css"/>
       <link rel="stylesheet" href="ja.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/@croquet/croquet"></script>
+      <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+      <script src="./move.js" type="text/javascript"></script>
   </head>
   <body>
-      <script src="./move.js" type="text/javascript"></script>
-
-      <!-- <script src="https://croquet.io/sdk/croquet-latest.min.js"></script>
-      <script src="./turner.js"></script> -->
       <script type="text/javascript">
 	  if (window.location.search !== "") {
-	      let p1, p2, s1, s2;
+	      let s1 = document.createElement("script");
+	      document.head.appendChild(s1);
 	      new Promise((resolve) => {
-		  s1 = document.createElement("script");
-		  s1.src = "https://unpkg.com/@croquet/croquet";
+		  s1.src = "https://cdn.jsdelivr.net/npm/page-synchronizer@1.0.6";
 		  s1.onload = resolve;
-		  document.body.appendChild(s1);
 	      }).then(() => {
-		  return new Promise((resolve) => {
-		      s2 = document.createElement("script");
-		      s2.src = "https://unpkg.com/page-synchronizer@1.0.5";
-		      s2.onload = resolve;
-		      document.body.appendChild(s2);
+		  let q = new QRious({
+		      element: document.getElementById("qr"),
+		      value: window.location.href
 		  });
-	      }).then(() => {
 		  SimplePageView.start({
 		      apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg",
 		      eventRateLimit: 60
@@ -36,7 +31,6 @@
 	      style.innerHTML = "html {scroll-behavior: smooth;";
 	      document.body.appendChild(style);
 	  }
-	  
       </script>
       
       <div class="article">
@@ -52,6 +46,7 @@
 		  <div class="toc-button" id="education-button">学歴</div>
 		  <div class="toc-button" id="employment-button">職歴</div>
 		  <div class="toc-button" id="other-button">その他</div>
+		  <div id="qrHolder"><canvas id="qr" width=80 height=80></canvas></div>
 	      </div>
 	      <div class="gradient">
 	      </div>
@@ -573,7 +568,7 @@ o			      <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kK
 	      </div>
 
 	      <hr>
-	      <div style="text-align: right">Last updated: 2023-02-15</div>
+	      <div style="text-align: right">Last updated: 2023-04-27</div>
 	  </div>
       </div>
   </body>
