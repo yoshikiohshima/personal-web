@@ -21,6 +21,13 @@ function addHandlers() {
             moveTo(id);
         });
     });
+
+    let qr = document.getElementById("qrHolder");
+    qr.onclick = () => toggle(qr);
+}
+
+function toggle(qr) {
+    qr.classList.toggle("zoomed", !qr.classList.contains("zoomed"));
 }
 
 function moveTo(id) {

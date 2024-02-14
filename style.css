@@ -137,6 +137,16 @@ hr.section-hr:after {
     height: 80px;
 }
 
+#qrHolder {
+    background: white;
+}
+
+.zoomed {
+    transform: scale(4);
+    transform-origin: 0 0;
+    transition: transform 0.5s;
+}
+
 @media only screen and (max-width: 1000px) {
     .image-holder {
 	width: 100px;
