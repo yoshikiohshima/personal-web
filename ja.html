@@ -10,383 +10,383 @@
   </head>
   <body>
       <script type="text/javascript">
-	  if (window.location.search !== "") {
-	      let s1 = document.createElement("script");
-	      document.head.appendChild(s1);
-	      new Promise((resolve) => {
-		  s1.src = "https://cdn.jsdelivr.net/npm/page-synchronizer@1.0.13";
-		  s1.onload = resolve;
-	      }).then(() => {
-		  let q = new QRious({
-		      element: document.getElementById("qr"),
-		      value: window.location.href
-		  });
-		  SimplePageView.start({
-		      apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg",
-		      eventRateLimit: 60
-		  });
-	      });
-	  } else {
-	      let style = document.createElement("style");
-	      style.innerHTML = "html {scroll-behavior: smooth;";
-	      document.body.appendChild(style);
-	  }
+          if (window.location.search !== "") {
+              let s1 = document.createElement("script");
+              document.head.appendChild(s1);
+              new Promise((resolve) => {
+                  s1.src = "https://cdn.jsdelivr.net/npm/page-synchronizer@1.0.13";
+                  s1.onload = resolve;
+              }).then(() => {
+                  let q = new QRious({
+                      element: document.getElementById("qr"),
+                      value: window.location.href
+                  });
+                  SimplePageView.start({
+                      apiKey: "16AxEcvh2DMiDImmLu90du6spB3kCBFNa5srzoBDg",
+                      eventRateLimit: 60
+                  });
+              });
+          } else {
+              let style = document.createElement("style");
+              style.innerHTML = "html {scroll-behavior: smooth;";
+              document.body.appendChild(style);
+          }
       </script>
       
       <div class="article">
-	  <div class="sidebar">
-	      <div class="menu">
-		  <div><a href="index.html">English</a> / 日本語</div>
-		  <hr>
-		  <div class="toc-button" id="aboutme-button">こんにちは</div>
-		  <div class="toc-button" id="projects-button">プロジェクト</div>
-		  <div class="toc-button" id="books-button">書籍など</div>
-		  <div class="toc-button" id="academic-button">学会活動</div>
-		  <div class="toc-button" id="other-work-button">その他の仕事</div>
-		  <div class="toc-button" id="education-button">学歴</div>
-		  <div class="toc-button" id="employment-button">職歴</div>
-		  <div class="toc-button" id="other-button">その他</div>
-		  <div id="qrHolder"><canvas id="qr" width=80 height=80></canvas></div>
-	      </div>
-	      <div class="gradient">
-	      </div>
-	  </div>
+          <div class="sidebar">
+              <div class="menu">
+                  <div><a href="index.html">English</a> / 日本語</div>
+                  <hr>
+                  <div class="toc-button" id="aboutme-button">こんにちは</div>
+                  <div class="toc-button" id="projects-button">プロジェクト</div>
+                  <div class="toc-button" id="books-button">書籍など</div>
+                  <div class="toc-button" id="academic-button">学会活動</div>
+                  <div class="toc-button" id="other-work-button">その他の仕事</div>
+                  <div class="toc-button" id="education-button">学歴</div>
+                  <div class="toc-button" id="employment-button">職歴</div>
+                  <div class="toc-button" id="other-button">その他</div>
+                  <div id="qrHolder"><canvas id="qr" width=80 height=80></canvas></div>
+              </div>
+              <div class="gradient">
+              </div>
+          </div>
 
-	  <div class="content" id="content">
-	      <h1 class="top-name"  id="aboutme">Yoshiki Ohshima (Ph.D.)</h1>
+          <div class="content" id="content">
+              <h1 class="top-name"  id="aboutme">Yoshiki Ohshima (Ph.D.)</h1>
 
-	      <h3>こんにちは！</h3>
-	      <p>
+              <h3>こんにちは！</h3>
+              <p>
 コンピュータ・サイエンスの研究とソフトウェア開発をしている大島芳樹です。これまで、プログラミング言語やプログラミング環境、そして対話的なアプリケーションの研究開発、とくに教育向けのシステムに携わってきました。学会活動にも積極的にしています。
-	      </p>
-	      <p>
-		  東京工業大学の学生だったころは、宣言的記述による最適化コンパイラや入れ子トランザクションを持った言語などのプロジェクトをやっていました。それはそれで良かったのですが、思い返すと、広い世界を知らないままかなり狭い視野にとらわれたままだったように思います。そこで、それが大きく変わることとなりました。
-	      </p>
+              </p>
+              <p>
+                  東京工業大学の学生だったころは、宣言的記述による最適化コンパイラや入れ子トランザクションを持った言語などのプロジェクトをやっていました。それはそれで良かったのですが、思い返すと、広い世界を知らないままかなり狭い視野にとらわれたままだったように思います。そこで、それが大きく変わることとなりました。
+              </p>
 
-	      <p>
-		  以下で触れるように、あるきっかけからアラン・ケイ博士と彼のグループと仕事をするようになりました。そこでは、「そもそもコンピューティングとはなんなのか」、また禅の公案のような「もし目の前にあるコンピュータのハードウェアを全部取り去ってしまったときに残るコンピューティングとは何か」そして「人類にとってコンピューティングとは何を意味するのか」という問題意識を持ち、それについて話をするだけではなく、実際に形あるものを作っていたのです。
-	      </p>
+              <p>
+                  以下で触れるように、あるきっかけからアラン・ケイ博士と彼のグループと仕事をするようになりました。そこでは、「そもそもコンピューティングとはなんなのか」、また禅の公案のような「もし目の前にあるコンピュータのハードウェアを全部取り去ってしまったときに残るコンピューティングとは何か」そして「人類にとってコンピューティングとは何を意味するのか」という問題意識を持ち、それについて話をするだけではなく、実際に形あるものを作っていたのです。
+              </p>
 
-	      <p>
-		  私自身はほどほどのプログラマーですが、プログラミングの技術だけでなくいろいろなことについて学びたいと思っています。これまでに得た<a target="_blank" rel="noopener noreferrer" href="https://youtu.be/FvmTSpJU-Xc?t=2067">知識と目的意識</a>が、私が作るものを特徴付けているように思います。
-	      </p>
+              <p>
+                  私自身はほどほどのプログラマーですが、プログラミングの技術だけでなくいろいろなことについて学びたいと思っています。これまでに得た<a target="_blank" rel="noopener noreferrer" href="https://youtu.be/FvmTSpJU-Xc?t=2067">知識と目的意識</a>が、私が作るものを特徴付けているように思います。
+              </p>
 
-	      <hr class="section-hr">
-		  
-	      <div class="section">
-		  <h3 id="projects">主なプロジェクト</h3>
-		  <div class="project" id="rie-jun">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./rie-jun.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>RieとJun: 宣言的記述によるコンパイラ生成系 (1993-)</h4>
+              <hr class="section-hr">
+                  
+              <div class="section">
+                  <h3 id="projects">主なプロジェクト</h3>
+                  <div class="project" id="rie-jun">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./rie-jun.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>RieとJun: 宣言的記述によるコンパイラ生成系 (1993-)</h4>
 <a target="_blank" rel="noopener noreferrer" href="https://search.star.titech.ac.jp/titech-ss/pursuer.act?event=outside&key_rid=1000015951&lang=jp">佐々政孝教授</a>の指導のもと、属性文法に基づくコンパイラ生成系プロジェクトに携わりました。
-			  <ul>
-			      <li>
-				  <a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/chapter/10.1007/3-540-53669-8_74">Rie and Jun</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                          <ul>
+                              <li>
+                                  <a target="_blank" rel="noopener noreferrer" href="https://link.springer.com/chapter/10.1007/3-540-53669-8_74">Rie and Jun</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="harmony">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./harmony.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Harmony/2言語 (1995-)</h4>
-			  <a target="_blank" rel="noopener noreferrer" href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381383">脇田建博士</a>の指導のもと、入れ子トランザクション機能を持った並行オブジェクト指向言語について研究し、そのプロトタイプを作成しました。
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7372&rep=rep1&type=pdf">Concurrent Transactions and Communicators: Extensible Synchronization Mechanisms for Distributed Programming</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="harmony">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./harmony.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Harmony/2言語 (1995-)</h4>
+                          <a target="_blank" rel="noopener noreferrer" href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381383">脇田建博士</a>の指導のもと、入れ子トランザクション機能を持った並行オブジェクト指向言語について研究し、そのプロトタイプを作成しました。
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.7372&rep=rep1&type=pdf">Concurrent Transactions and Communicators: Extensible Synchronization Mechanisms for Distributed Programming</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="squeak">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./squeak.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Squeak Smalltalk (1997-)</h4>
-			  <p>
-			      1997年に開かれたOOPSLAという国際会議に学生ボランティアとして参加しました。運命のいたずらともいうべき小さなきっかけから、<a target="_blank" rel="noopener noreferrer" href="https://www.r-ccs.riken.jp/en/overview/leadership.html">松岡聡教授</a>を通じてSqueakチームのJohn Maloneyと立ち話をする機会ができました。松岡先生はシャープから販売されていたZaurusというPDAを皆に見せびらかせており、なりゆきで私にSqueakをZaurusに移植するようにと言ってきたのです。私はその頃はSmalltalkについてはほとんど何も知りませんでした。ただ、Emacsについては少し知っていたために、対話的に書き換え可能なコンピュータ環境とは良いものだ、という程度の認識を持っている程度でした。そのような無知蒙昧な状態でSqueakに触れ、コンピュータ・システム全体を一貫性のある動的なものとして構築したものがちゃんと動いている、ということに驚愕したわけです。その後私がコンピュータの分野でやってきたことは、システム全体を見渡した設計、動作中のシステムの動的な変更のサポート、そして教育分野へのコピューティングの応用を重視しているという意味で、SmalltalkとSqueakからの影響を多大に受けていると言えます。
-			  </p>
-			  <p>
-			      私がSqueakに行った貢献で多分一番重要なのは、多言語化機能を実装したことかなと思います。もっとも基本的なところの変更であり、20年ほど経った今でもまだ使われています。
-			  </p>
-			  
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://squeak.org">Squeak</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://akiba-pc.watch.impress.co.jp/hotline/980718/alankay.html">アラン・ケイと一緒に写っている写真の最初のもの</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IADocs/inforemost04.pdf">東工大の学内誌でOBとして紹介されました</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/ohshima_c5.pdf">The Design and Implementation of Multilingualized Squeak</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="squeak">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./squeak.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Squeak Smalltalk (1997-)</h4>
+                          <p>
+                              1997年に開かれたOOPSLAという国際会議に学生ボランティアとして参加しました。運命のいたずらともいうべき小さなきっかけから、<a target="_blank" rel="noopener noreferrer" href="https://www.r-ccs.riken.jp/en/overview/leadership.html">松岡聡教授</a>を通じてSqueakチームのJohn Maloneyと立ち話をする機会ができました。松岡先生はシャープから販売されていたZaurusというPDAを皆に見せびらかせており、なりゆきで私にSqueakをZaurusに移植するようにと言ってきたのです。私はその頃はSmalltalkについてはほとんど何も知りませんでした。ただ、Emacsについては少し知っていたために、対話的に書き換え可能なコンピュータ環境とは良いものだ、という程度の認識を持っている程度でした。そのような無知蒙昧な状態でSqueakに触れ、コンピュータ・システム全体を一貫性のある動的なものとして構築したものがちゃんと動いている、ということに驚愕したわけです。その後私がコンピュータの分野でやってきたことは、システム全体を見渡した設計、動作中のシステムの動的な変更のサポート、そして教育分野へのコピューティングの応用を重視しているという意味で、SmalltalkとSqueakからの影響を多大に受けていると言えます。
+                          </p>
+                          <p>
+                              私がSqueakに行った貢献で多分一番重要なのは、多言語化機能を実装したことかなと思います。もっとも基本的なところの変更であり、20年ほど経った今でもまだ使われています。
+                          </p>
+                          
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://squeak.org">Squeak</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://akiba-pc.watch.impress.co.jp/hotline/980718/alankay.html">アラン・ケイと一緒に写っている写真の最初のもの</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IADocs/inforemost04.pdf">東工大の学内誌でOBとして紹介されました</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/ohshima_c5.pdf">The Design and Implementation of Multilingualized Squeak</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="zauchu">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./zauchu.jpg"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>SqueakのZaurus PDAへの移植 (1998)</h4>
-			  <p>
-			      Squeakは移植性を非常に重視して設計されており、非力な携帯型のものを含め幅広いハードウェアで動作するように作られていました。私はSqueakをZaurusに移植する作業を1998年に始めたのですが、運良くシャープがアプリケーションを作れるようにZaurusプラットフォームを解放したところであり、また新しいモデルがちょうどギリギリのメモリを搭載してくれていた、というような幸運にも恵まれ、移植作業を2週間ほどで完了することができました。他にもオープンソースであるSqueakに貢献していたこともあり、Los AngelesのWalt Disney Imagineering R&Dに所属していた彼の研究グループを訪問し、その年Vancouverで開催されたOOPSLAに参加するようアラン・ケイ博士に取り計らってもらいました。
-			  </p>
-			  <p>
-			      この時に私は人生初めて飛行機の乗り換えをすることになったのですが、サンフランシスコ空港で見事に乗り継ぎに失敗しました。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.ogis-ri.co.jp/otc/hiroba/others/OORing/interview04.html">この話に関するインタビュー</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_action_common_download&item_id=16912&item_no=1&attribute_id=1&file_no=1&page_id=13&block_id=8">移植に関する論文</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="zauchu">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./zauchu.jpg"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>SqueakのZaurus PDAへの移植 (1998)</h4>
+                          <p>
+                              Squeakは移植性を非常に重視して設計されており、非力な携帯型のものを含め幅広いハードウェアで動作するように作られていました。私はSqueakをZaurusに移植する作業を1998年に始めたのですが、運良くシャープがアプリケーションを作れるようにZaurusプラットフォームを解放したところであり、また新しいモデルがちょうどギリギリのメモリを搭載してくれていた、というような幸運にも恵まれ、移植作業を2週間ほどで完了することができました。他にもオープンソースであるSqueakに貢献していたこともあり、Los AngelesのWalt Disney Imagineering R&Dに所属していた彼の研究グループを訪問し、その年Vancouverで開催されたOOPSLAに参加するようアラン・ケイ博士に取り計らってもらいました。
+                          </p>
+                          <p>
+                              この時に私は人生初めて飛行機の乗り換えをすることになったのですが、サンフランシスコ空港で見事に乗り継ぎに失敗しました。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.ogis-ri.co.jp/otc/hiroba/others/OORing/interview04.html">この話に関するインタビュー</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&active_action=repository_action_common_download&item_id=16912&item_no=1&attribute_id=1&file_no=1&page_id=13&block_id=8">移植に関する論文</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="netfront">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./netfront.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>NetFrontブラウザのZaurus PDAへの移植 (2000)</h4>
-			  <p>
-			      <a target="_blank" rel="noopener noreferrer" href="https://www.access-company.com/">ACCESS</a>社は、NetFrontという軽量ウェブブラウザで携帯機器向け市場を切り開いていました。私はアルバイトとしてNetFrontをZaurusに移植する作業を行いました。Squeakと同様にNetFrontはプラットフォーム依存のコードをリンクすることにより移植が簡単にできるように設計されていたので、移植にあたって私はSqueak用に書いたコードを恥も臆面もなく再利用しました。まあ、自分がオープン・ソースプロジェクト用に書いたコードなのだから良いでしょう。ACCESSの人から見たら、「やけにコード書きが早いやつ」のように見えたかもしれません。
-			  </p>
-		      </div>
-		  </div>
+                  <div class="project" id="netfront">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./netfront.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>NetFrontブラウザのZaurus PDAへの移植 (2000)</h4>
+                          <p>
+                              <a target="_blank" rel="noopener noreferrer" href="https://www.access-company.com/">ACCESS</a>社は、NetFrontという軽量ウェブブラウザで携帯機器向け市場を切り開いていました。私はアルバイトとしてNetFrontをZaurusに移植する作業を行いました。Squeakと同様にNetFrontはプラットフォーム依存のコードをリンクすることにより移植が簡単にできるように設計されていたので、移植にあたって私はSqueak用に書いたコードを恥も臆面もなく再利用しました。まあ、自分がオープン・ソースプロジェクト用に書いたコードなのだから良いでしょう。ACCESSの人から見たら、「やけにコード書きが早いやつ」のように見えたかもしれません。
+                          </p>
+                      </div>
+                  </div>
 
-		  <div class="project" id="parkspda">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./parkspda.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Parks PDA (2000)</h4>
-			  <p>
-			      Walt Disney Imagineering R&Dでは、当時市場に出てきていた携帯型の電子機器でテーマパーク来場者に新たなサービスを提供できないのか、ということに関心を寄せていました。また同じ頃、シャープはさらに新型のZaurusを販売し始めました。この新型は、1. カリフォルニアやフロリダの太陽のもとでもよく見えるカラースクリーン、2. Disneyが求める水準を満たすオーディオやアニメーションをするだけの性能、3. そのようなコンテンツを格納できるカードを挿せるスロットという、Disneyが求める要求を満たせる機能をようやくクリアしたものでした。私はAndy Ogdenをリーダーとするグループにインターンとして参加し、ソフトウェアの開発に関わることになりました。Squeakが持つ柔軟性により、Johnと私でDisneyのデザイナー達がコンテンツを作成できるようなフレームワークを手早く作ることができました。実際の来場者を対象としたテストは11月のはじめにオーランドで行ったので、チーム皆でDisney提携のホテルに2週間ほど泊まって実験したわけです。現地での実験がスムースに進むようになると、私は手が空いてきたのでDisney Worldのあちこちのパークに行き、R&Dのバッジに威力を発揮してアトラクションの列の先頭に入って遊びました。
-			  </p>
-			  <p>
-			      こういう実験はしばしば地元のニュースに取り上げることがあり、我々も記事になるかなと期待していたのですが、ブッシュ対ゴアの選挙騒動があったために、我々の実験のような楽しい話に割く紙面はなくなってしまいました。
-			  </p>
+                  <div class="project" id="parkspda">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./parkspda.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Parks PDA (2000)</h4>
+                          <p>
+                              Walt Disney Imagineering R&Dでは、当時市場に出てきていた携帯型の電子機器でテーマパーク来場者に新たなサービスを提供できないのか、ということに関心を寄せていました。また同じ頃、シャープはさらに新型のZaurusを販売し始めました。この新型は、1. カリフォルニアやフロリダの太陽のもとでもよく見えるカラースクリーン、2. Disneyが求める水準を満たすオーディオやアニメーションをするだけの性能、3. そのようなコンテンツを格納できるカードを挿せるスロットという、Disneyが求める要求を満たせる機能をようやくクリアしたものでした。私はAndy Ogdenをリーダーとするグループにインターンとして参加し、ソフトウェアの開発に関わることになりました。Squeakが持つ柔軟性により、Johnと私でDisneyのデザイナー達がコンテンツを作成できるようなフレームワークを手早く作ることができました。実際の来場者を対象としたテストは11月のはじめにオーランドで行ったので、チーム皆でDisney提携のホテルに2週間ほど泊まって実験したわけです。現地での実験がスムースに進むようになると、私は手が空いてきたのでDisney Worldのあちこちのパークに行き、R&Dのバッジに威力を発揮してアトラクションの列の先頭に入って遊びました。
+                          </p>
+                          <p>
+                              こういう実験はしばしば地元のニュースに取り上げることがあり、我々も記事になるかなと期待していたのですが、ブッシュ対ゴアの選挙騒動があったために、我々の実験のような楽しい話に割く紙面はなくなってしまいました。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2003002_parkspda.pdf">The Parks PDA: A Handheld Device for Theme Park Guests in Squeak</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2003002_parkspda.pdf">The Parks PDA: A Handheld Device for Theme Park Guests in Squeak</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="stitch">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./stitch.jpg"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Stitch's Photo Phone (2002)</h4>
-			  <p>
-			      Stitch's Phone Boothは、テーマパークでの対話的なアトラクションを作る実験でした。これはひと家族が入れる大きさの部屋で、壁の一面が平面ディスプレイとなっていました。他の壁の裏にいるキャストはゲームコントローラーで画面上のキャラクター(Stitch)が動かしつつ、裏声でゲストと会話する、というものでした。一通りおしゃべりをしたところで、画面上のStitchがカメラを取り出して写真を撮るのですが、部屋に隠されていたカメラからの映像を取得し、それを印刷して家族に渡すようになっていました。何しろ実際の人間が裏にいたわけなので、特に小さな子供にとってはまさに本物のキャラクターと喋っているようで、多くの家族にとってはStitchと話したことが一番楽しかった思い出になりました。
-			  </p>
-			  <p>
-			      私はカメラからのデータを取得するコードを書きました。この実験はは、第10回<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Themed_Entertainment_Association">Themed Entertainment Association Award</a>という賞をもらいました。
-			  </p>
-			  <p>
-			      こちらの実験はAnaheimで行われたので、私は3週間ほどGlendaleからAnaheimまで毎日(しばしば午前0時過ぎに)車で通いました。
-			  <p>
-		      </div>
-		  </div>
+                  <div class="project" id="stitch">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./stitch.jpg"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Stitch's Photo Phone (2002)</h4>
+                          <p>
+                              Stitch's Phone Boothは、テーマパークでの対話的なアトラクションを作る実験でした。これはひと家族が入れる大きさの部屋で、壁の一面が平面ディスプレイとなっていました。他の壁の裏にいるキャストはゲームコントローラーで画面上のキャラクター(Stitch)が動かしつつ、裏声でゲストと会話する、というものでした。一通りおしゃべりをしたところで、画面上のStitchがカメラを取り出して写真を撮るのですが、部屋に隠されていたカメラからの映像を取得し、それを印刷して家族に渡すようになっていました。何しろ実際の人間が裏にいたわけなので、特に小さな子供にとってはまさに本物のキャラクターと喋っているようで、多くの家族にとってはStitchと話したことが一番楽しかった思い出になりました。
+                          </p>
+                          <p>
+                              私はカメラからのデータを取得するコードを書きました。この実験はは、第10回<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Themed_Entertainment_Association">Themed Entertainment Association Award</a>という賞をもらいました。
+                          </p>
+                          <p>
+                              こちらの実験はAnaheimで行われたので、私は3週間ほどGlendaleからAnaheimまで毎日(しばしば午前0時過ぎに)車で通いました。
+                          <p>
+                      </div>
+                  </div>
 
-		  <div class="project" id="etoys">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./etoys.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Etoys (2003)</h4>
-			  <p>
-			      Disneyでは、私は正式にはSqueakチームではありませんでしたく(それでもプロジェクトではSqueakを使い、Squeakへの貢献もしていましたが)。9/11のテロはDisneyの業績にも大きな傷跡を残し、その煽りを受けてSqueakチームはレイオフされることになってしまいました。私はSqueakチームよりは少し長くDisneyに残りましたが、それでも結局レイオフされることになりました。ビザの関係から日本に帰らなくてはならなくなるところでしたが、伝手を頼って<a target="_blank" rel="noopener noreferrer" href="http://www.twinsun.com/">松尾正信博士</a>に紹介していただき、松尾さんの会社であるTwin Sunで働けるように取り計らってもらいました。ただ、仕事の内容はさらにアラン・ケイとキム・ローズが設立したViewpoints Research Instituteのプロジェクト、中でも<a target="_blank" rel="noopener noreferrer" href="http://vpri.org/work/tlpiese.htm">Etoys</a>に従事する、ということが多くなりました。Etoysはエンド・ユーザー向けのプログラミング環境であり、Squeakの上に構築されていました。このころからEtoysに深く関与するようになり、数年のうちに徐々にリーダー的役割を果たすようになりました。
-			  </p>
-		      </div>
-		  </div>
+                  <div class="project" id="etoys">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./etoys.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Etoys (2003)</h4>
+                          <p>
+                              Disneyでは、私は正式にはSqueakチームではありませんでしたく(それでもプロジェクトではSqueakを使い、Squeakへの貢献もしていましたが)。9/11のテロはDisneyの業績にも大きな傷跡を残し、その煽りを受けてSqueakチームはレイオフされることになってしまいました。私はSqueakチームよりは少し長くDisneyに残りましたが、それでも結局レイオフされることになりました。ビザの関係から日本に帰らなくてはならなくなるところでしたが、伝手を頼って<a target="_blank" rel="noopener noreferrer" href="http://www.twinsun.com/">松尾正信博士</a>に紹介していただき、松尾さんの会社であるTwin Sunで働けるように取り計らってもらいました。ただ、仕事の内容はさらにアラン・ケイとキム・ローズが設立したViewpoints Research Instituteのプロジェクト、中でも<a target="_blank" rel="noopener noreferrer" href="http://vpri.org/work/tlpiese.htm">Etoys</a>に従事する、ということが多くなりました。Etoysはエンド・ユーザー向けのプログラミング環境であり、Squeakの上に構築されていました。このころからEtoysに深く関与するようになり、数年のうちに徐々にリーダー的役割を果たすようになりました。
+                          </p>
+                      </div>
+                  </div>
 
-		  <div class="project" id="kedama">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./kedama.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Kedama (2005)</h4>
-			  <p>
-			      Mitch ResnickのStarLogoやJohn MaloneyのStarSqueakの後継として、Etoysと統合された高並列な粒子シミュレーションシステムを設計・開発しました。Etoysと統合されていることにより、数千という粒子の振る舞いをEtoysのブロック編集を通じて動的に変更できるものでした。これが私の博士論文の元となりました。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2005001_ohshima_kedama.pdf">Kedama: A GUI-based Interactive Massively Parallel Particle Programming System</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="kedama">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./kedama.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Kedama (2005)</h4>
+                          <p>
+                              Mitch ResnickのStarLogoやJohn MaloneyのStarSqueakの後継として、Etoysと統合された高並列な粒子シミュレーションシステムを設計・開発しました。Etoysと統合されていることにより、数千という粒子の振る舞いをEtoysのブロック編集を通じて動的に変更できるものでした。これが私の博士論文の元となりました。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2005001_ohshima_kedama.pdf">Kedama: A GUI-based Interactive Massively Parallel Particle Programming System</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="squeak-croquet">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./squeak-croquet.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Squeak Version of Croquet (2006)</h4>
-			  <p>
-			      私がSqueakやEtoysをやっていたころ、David Smith、Andreas Raab、David ReedとAlan Kayは3次元実時間共有環境Croquetというプロジェクトに取り組んでいました。私はちょっとだけお手伝いをする、という形でした。(たとえば、習作としてCroquet向けにPaxosの実装を書いたりしました)。他にも論文としてまとめた成果もあります。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.computer.org/csdl/proceedings-article/c5/2005/23250050/12OmNxWuiiU">Filters and Tasks in Croquet</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="squeak-croquet">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./squeak-croquet.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Squeak Version of Croquet (2006)</h4>
+                          <p>
+                              私がSqueakやEtoysをやっていたころ、David Smith、Andreas Raab、David ReedとAlan Kayは3次元実時間共有環境Croquetというプロジェクトに取り組んでいました。私はちょっとだけお手伝いをする、という形でした。(たとえば、習作としてCroquet向けにPaxosの実装を書いたりしました)。他にも論文としてまとめた成果もあります。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.computer.org/csdl/proceedings-article/c5/2005/23250050/12OmNxWuiiU">Filters and Tasks in Croquet</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="tweak">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./tweak.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Tweak (2006)</h4>
-			  <p>
-			      Viewpointsのチームは、Andreas RaabをリーダーとしてEtoysを一般化した次世代の環境であるTweakというプロジェクトに取り組み始めていました。私は粒子シミュレーションシステムを作ったり、エンド・ユーザー向けプログラミング環境の開発を手伝ったりしました。
-			  </p>
-		      </div>
-		  </div>
+                  <div class="project" id="tweak">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./tweak.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Tweak (2006)</h4>
+                          <p>
+                              Viewpointsのチームは、Andreas RaabをリーダーとしてEtoysを一般化した次世代の環境であるTweakというプロジェクトに取り組み始めていました。私は粒子シミュレーションシステムを作ったり、エンド・ユーザー向けプログラミング環境の開発を手伝ったりしました。
+                          </p>
+                      </div>
+                  </div>
 
-		  <div class="project" id="olpc">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./olpc.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Etoys for OLPC (2007-)</h4>
-			  <p>
-			      OLPC (One Laptop Per Child)とは、世界中の子供達を対象とした安価なラップトップコンピュータ(XOラップトップ)を開発し、政府を介して子供一人一人がコンピュータを一台ずつ持てるようにすることを目標としたプロジェクトでした。我々のグループも最初期からのソフトウェア設計に関する議論に参加していました。SqueakをXOのソフトウェア全体の基盤として使い、子供達が「作ることで学ぶ」スタイルで学べるようにする、というアイディアが俎上には上がったりもしたのです。ただ、結局はその路線がとられることはありませんでしたが、我々のグループもかなりの労力を注いで、EtoysがXO上のアプリケーションとして使いやすいように改良をしました。XOに付属していたソフトウェアの中には「実際に何かを作れる」ものがほとんどなかったために、Etoysは一部の先生や生徒にはとても好評でした。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://wiki.laptop.org/go/Smalltalk_Development_on_XO">Smalltalk development on OLPC</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2009001_etoys4olpc.pdf">Etoys for One Laptop Per Child</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="olpc">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./olpc.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Etoys for OLPC (2007-)</h4>
+                          <p>
+                              OLPC (One Laptop Per Child)とは、世界中の子供達を対象とした安価なラップトップコンピュータ(XOラップトップ)を開発し、政府を介して子供一人一人がコンピュータを一台ずつ持てるようにすることを目標としたプロジェクトでした。我々のグループも最初期からのソフトウェア設計に関する議論に参加していました。SqueakをXOのソフトウェア全体の基盤として使い、子供達が「作ることで学ぶ」スタイルで学べるようにする、というアイディアが俎上には上がったりもしたのです。ただ、結局はその路線がとられることはありませんでしたが、我々のグループもかなりの労力を注いで、EtoysがXO上のアプリケーションとして使いやすいように改良をしました。XOに付属していたソフトウェアの中には「実際に何かを作れる」ものがほとんどなかったために、Etoysは一部の先生や生徒にはとても好評でした。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://wiki.laptop.org/go/Smalltalk_Development_on_XO">Smalltalk development on OLPC</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2009001_etoys4olpc.pdf">Etoys for One Laptop Per Child</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="steps">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./steps.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>The STEPS Project (2007-2013)</h4>
-			  <p>
-			      Viewpointsでは、「パーソナル・コンピュータのソフトウェア全体は2万行もあれば実際に動くものの骨子を書くことできるはずである」というアイディアを実証するためのプロジェクトを始めようとしていました。NSFからの資金提供により、5年計画で取り組みことになりました。ソフトウェア全体というのは、コンパイラ、ネットワークドライバ、メモリ管理システム、グラフィックスシステム、テキストレイアウト、アプリケーション・フレームワークそして種々のアプリケーションまでも含んだものです。これは大きなプロジェクトであり、数人のメンバーそれぞれがいろいろと興味深いアイディアを出し、それらを実装して行きました。私はアプリケーション・フレームワークをやることになりました。私はFunctional Reactive Programmingを元にしつつ、動的なコード変更ができるようなものを設計・実装しました。そのフレームワークでは、アプリケーションと部品の間には区別はなく、どのようなアプリケーションも他のアプリケーションに埋め込めるようになっていました。宣言的な記述、そしてアプリケーションと部品の統合によって、少ない記述量ながらも多機能エディターを作ることできました。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/rn2006002_nsfprop.pdf">The STEP Project proposal</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2013002_KSonward.pdf">The GUI framework for the STEP project</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="steps">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./steps.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>The STEPS Project (2007-2013)</h4>
+                          <p>
+                              Viewpointsでは、「パーソナル・コンピュータのソフトウェア全体は2万行もあれば実際に動くものの骨子を書くことできるはずである」というアイディアを実証するためのプロジェクトを始めようとしていました。NSFからの資金提供により、5年計画で取り組みことになりました。ソフトウェア全体というのは、コンパイラ、ネットワークドライバ、メモリ管理システム、グラフィックスシステム、テキストレイアウト、アプリケーション・フレームワークそして種々のアプリケーションまでも含んだものです。これは大きなプロジェクトであり、数人のメンバーそれぞれがいろいろと興味深いアイディアを出し、それらを実装して行きました。私はアプリケーション・フレームワークをやることになりました。私はFunctional Reactive Programmingを元にしつつ、動的なコード変更ができるようなものを設計・実装しました。そのフレームワークでは、アプリケーションと部品の間には区別はなく、どのようなアプリケーションも他のアプリケーションに埋め込めるようになっていました。宣言的な記述、そしてアプリケーションと部品の統合によって、少ない記述量ながらも多機能エディターを作ることできました。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/rn2006002_nsfprop.pdf">The STEP Project proposal</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2013002_KSonward.pdf">The GUI framework for the STEP project</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="gp">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./gp.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>GP (2013-)</h4>
-			  <p>
-			      John Maloney (<a target="_blank" rel="noopener noreferrer" href="https://scratch.mit.edu/">Scratch</a>のメイン・プログラマでした)と<a target="_blank" rel="noopener noreferrer" href="https://snap.berkeley.edu/">Snap!</a>を開発したJens Mönigと3人で、GPという新たなブロック・ベースのプログラミングシステムを作るプロジェクトを始めました。エンド・ユーザー向けシステムの開発経験に関して家b、我々我々3人が相当なものを持っていたと言えなくもないのですが、それでも我々から見ると、いまだに真に汎用のシステム、つまり自分自身をすべて記述できるような強力なものが存在しないのがもどかしたかったわけです。この問題を解消することを目標し、Johnが設計と開発の中心となって活動しました。私はモジュールシステムを作ったり、仮想機械の64bit化などを行いました。
-			  </p>
-			  <p>
-			      私はかわいいモルモット(Guinea Pig)をプロジェクトのマスコットにしよう、と主張したのですが、取り入れられることはありませんでした。
-			  </p>
+                  <div class="project" id="gp">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./gp.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>GP (2013-)</h4>
+                          <p>
+                              John Maloney (<a target="_blank" rel="noopener noreferrer" href="https://scratch.mit.edu/">Scratch</a>のメイン・プログラマでした)と<a target="_blank" rel="noopener noreferrer" href="https://snap.berkeley.edu/">Snap!</a>を開発したJens Mönigと3人で、GPという新たなブロック・ベースのプログラミングシステムを作るプロジェクトを始めました。エンド・ユーザー向けシステムの開発経験に関して家b、我々我々3人が相当なものを持っていたと言えなくもないのですが、それでも我々から見ると、いまだに真に汎用のシステム、つまり自分自身をすべて記述できるような強力なものが存在しないのがもどかしたかったわけです。この問題を解消することを目標し、Johnが設計と開発の中心となって活動しました。私はモジュールシステムを作ったり、仮想機械の64bit化などを行いました。
+                          </p>
+                          <p>
+                              私はかわいいモルモット(Guinea Pig)をプロジェクトのマスコットにしよう、と主張したのですが、取り入れられることはありませんでした。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://gpblocks.org/">GP: General Purpose Blocks Language</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2015003_modsys.pdf">A Module System for a General-Purpose Blocks Language</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://gpblocks.org/">GP: General Purpose Blocks Language</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/tr2015003_modsys.pdf">A Module System for a General-Purpose Blocks Language</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="kanto">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./kanto.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Kanto (2017)</h4>
-			  <p>
-			      私はコンピュータを使った協調作業、特に複数人で一緒に何かを作ったり学んだりできるものい興味を持っていました。WebRTCの画面共有とデータチャネルの機能を使えば、異なるブロック・エディター・アプリケーションであっても、同じ枠組みで共有環境にしてしまうことができるのではないかとということを思いつきました。Snap!を改造して複数のマウスポインターをサポートするようにし、実用性のある共有プログラミング環境を作ることができました。同じ枠組みで、SqueakJSとGPも共有化できました。
-			  </p>
-			  <p>
-			      このシステムの名前はKanto(関東)にしました。このようなアプリケーションには、初期のシステムが<a target="_blank" rel="noopener noreferrer" href="https://web.media.mit.edu/~lieber/Lieberary/Softviz/CACM-Debugging/Kansas/Kansas.html">Kansas</a>(アメリカの州で、だだっ広い平らな長方形をしている)という名前を使っていたことから、Squeak版として作られた同種のものがNebraskaと名付けられるという伝統がありました。私はJensと仕事をしていたので、もしかしたらドイツに平らなエリアがあるのではないかと聞いたのですが、「それだったらシュレースヴィヒ＝ホルシュタイン(Schleswig-Holstein)だね」と言われました。これではソフトウェアの名前にならないし、ほとんどの人は発音さえできないのではないかと思い、日本にある平野から名前を取りました。
-			  </p>
+                  <div class="project" id="kanto">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./kanto.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Kanto (2017)</h4>
+                          <p>
+                              私はコンピュータを使った協調作業、特に複数人で一緒に何かを作ったり学んだりできるものい興味を持っていました。WebRTCの画面共有とデータチャネルの機能を使えば、異なるブロック・エディター・アプリケーションであっても、同じ枠組みで共有環境にしてしまうことができるのではないかとということを思いつきました。Snap!を改造して複数のマウスポインターをサポートするようにし、実用性のある共有プログラミング環境を作ることができました。同じ枠組みで、SqueakJSとGPも共有化できました。
+                          </p>
+                          <p>
+                              このシステムの名前はKanto(関東)にしました。このようなアプリケーションには、初期のシステムが<a target="_blank" rel="noopener noreferrer" href="https://web.media.mit.edu/~lieber/Lieberary/Softviz/CACM-Debugging/Kansas/Kansas.html">Kansas</a>(アメリカの州で、だだっ広い平らな長方形をしている)という名前を使っていたことから、Squeak版として作られた同種のものがNebraskaと名付けられるという伝統がありました。私はJensと仕事をしていたので、もしかしたらドイツに平らなエリアがあるのではないかと聞いたのですが、「それだったらシュレースヴィヒ＝ホルシュタイン(Schleswig-Holstein)だね」と言われました。これではソフトウェアの名前にならないし、ほとんどの人は発音さえできないのではないかと思い、日本にある平野から名前を取りました。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/kanto-framework.pdf">Kanto: A Multi-participant Screen-Sharing System for Etoys, Snap!, and GP</a></li>
-			  </ul>
-		      </div>
-		  </div>
-	      
-		  <div class="project" id="shadama">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./shadama.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Shadama (2017)</h4>
-			  <p>
-			      このころまた、動的な変更ができる粒子シミュレーションシステムを作り直してみたい、という気持ちが湧き上がってきましあ。ウェブ・ブラウザーからGPUを使うことができ、そしてJavaScriptは動的な変更が可能な言語とおいうことで、ブラウザー上で作ったのがShadamaです。
-			  </p>
-			  <p>
-			      博士論文のネタをやり直すということに引け目を感じるということもあるかもしれませんが、まあこういうことになってしまうときはなってしまいます。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="http://tinlizzie.org/~ohshima/shadama2/live2017/">Shadama: A Particle Simulation Programming Environment for Everyone</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.tele-task.de/lecture/video/6785/">Talk on Shadama and Croquet at Hasso Platner Institute</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://www.vpri.org/pdf/kanto-framework.pdf">Kanto: A Multi-participant Screen-Sharing System for Etoys, Snap!, and GP</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              
+                  <div class="project" id="shadama">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./shadama.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Shadama (2017)</h4>
+                          <p>
+                              このころまた、動的な変更ができる粒子シミュレーションシステムを作り直してみたい、という気持ちが湧き上がってきましあ。ウェブ・ブラウザーからGPUを使うことができ、そしてJavaScriptは動的な変更が可能な言語とおいうことで、ブラウザー上で作ったのがShadamaです。
+                          </p>
+                          <p>
+                              博士論文のネタをやり直すということに引け目を感じるということもあるかもしれませんが、まあこういうことになってしまうときはなってしまいます。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="http://tinlizzie.org/~ohshima/shadama2/live2017/">Shadama: A Particle Simulation Programming Environment for Everyone</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.tele-task.de/lecture/video/6785/">Talk on Shadama and Croquet at Hasso Platner Institute</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="machine-learing">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./machine-learning.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>機械学習 (2018-2019)</h4>
-			  <p>
-			      私は、Vianaiという会社の準備段階の手伝いもしました。やったのは、機械学習のトレンドについて学び、アプリケーションのプロトタイプを作ることでした。Vishal Sikka博士と緊密に連絡を取りつつ作業をしました。会社が正式に発足した後もしばらく請負として仕事を続けました。VishalとDan AmelangがOracle Open World 2019でデモをしたソフトウェアも少しお手伝いしました。
-			  </p>
+                  <div class="project" id="machine-learing">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./machine-learning.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>機械学習 (2018-2019)</h4>
+                          <p>
+                              私は、Vianaiという会社の準備段階の手伝いもしました。やったのは、機械学習のトレンドについて学び、アプリケーションのプロトタイプを作ることでした。Vishal Sikka博士と緊密に連絡を取りつつ作業をしました。会社が正式に発足した後もしばらく請負として仕事を続けました。VishalとDan AmelangがOracle Open World 2019でデモをしたソフトウェアも少しお手伝いしました。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8Kqn0AunWh0">Oracle Open World 2019でのVianaiのデモ</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=8Kqn0AunWh0">Oracle Open World 2019でのVianaiのデモ</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="croquet">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./croquet.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>JavaScript版 Croquet (2017-)</h4>
-			  <p>
-			      　Y Combinator Researchが我々の研究活動を後援できなくなってしまった時に、David Smith、そしてDan Ingalls, Vanessa Freudeberg、Aran Lunzerという同僚とともに、スタートアップを始めることにしました。この会社の目標は、ウェブ上で動く実時間共有アプリケーションを世の中に広めることです。共有化するためのアルゴリズムは元々のCroquetプロジェクトで開発されていたのて、我々はそれをJavaScriptで書き直しました。また、SDKを用意して、誰でも簡単に使えるようにしています。
-			  </p>
-			  <p>
-			      ただ、このSDKは基盤としてはしっかりしたものであるものの、大きなアプリケーション、特に動的なDOM要素の操作やスクリプティングを必要とするようなものを書くにはちょっと抽象化の水準が低すぎるので、私は同僚からの多大な支援も受け、仮装DOMに基づいたアプリケーション・フレームワークを設計・実装しました。また、そのフレーム枠を使ったGreenlight (旧称Q)という本格的共有アプリケーションも開発中です。
-			  </p>
-			  <p>
-			    さらに2021年の終わりから、Croquetでは3次元共有環境のCroquet Microverseを作り始めました。Microverseは、参加している複数のユーザーが自分達の世界を、世界の中から作っていけるというシステムです。
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/croquet/virtual-dom">Croquet Virtual DOM Framework</a></li>
-			      <li><a target="_blank" href="https://croquet.io/greenlight">Croquet Greenlight</a></li>
-			      <li><a target="_blank" href="https://youtu.be/kn8TZdgYMWc?t=287">Greenlightのデモ。字幕もあります。</a></li>
-o			      <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kKes">A demo of Croquet Microverse. (英語字幕あり)</a></li>
-			      <li><a target="_blank" href="https://www.youtube.com/watch?v=rc27d61EDro">A demo of Croquet Microverse. (California Smalltalkers Meetupで行ったもの。英語です)</a></li>
-			  </ul>
-		      </div>
-		  </div>
+                  <div class="project" id="croquet">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./croquet.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>JavaScript版 Croquet (2017-)</h4>
+                          <p>
+                              　Y Combinator Researchが我々の研究活動を後援できなくなってしまった時に、David Smith、そしてDan Ingalls, Vanessa Freudeberg、Aran Lunzerという同僚とともに、スタートアップを始めることにしました。この会社の目標は、ウェブ上で動く実時間共有アプリケーションを世の中に広めることです。共有化するためのアルゴリズムは元々のCroquetプロジェクトで開発されていたのて、我々はそれをJavaScriptで書き直しました。また、SDKを用意して、誰でも簡単に使えるようにしています。
+                          </p>
+                          <p>
+                              ただ、このSDKは基盤としてはしっかりしたものであるものの、大きなアプリケーション、特に動的なDOM要素の操作やスクリプティングを必要とするようなものを書くにはちょっと抽象化の水準が低すぎるので、私は同僚からの多大な支援も受け、仮装DOMに基づいたアプリケーション・フレームワークを設計・実装しました。また、そのフレーム枠を使ったGreenlight (旧称Q)という本格的共有アプリケーションも開発中です。
+                          </p>
+                          <p>
+                            さらに2021年の終わりから、Croquetでは3次元共有環境のCroquet Microverseを作り始めました。Microverseは、参加している複数のユーザーが自分達の世界を、世界の中から作っていけるというシステムです。
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/croquet/virtual-dom">Croquet Virtual DOM Framework</a></li>
+                              <li><a target="_blank" href="https://croquet.io/greenlight">Croquet Greenlight</a></li>
+                              <li><a target="_blank" href="https://youtu.be/kn8TZdgYMWc?t=287">Greenlightのデモ。字幕もあります。</a></li>
+o                             <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kKes">A demo of Croquet Microverse. (英語字幕あり)</a></li>
+                              <li><a target="_blank" href="https://www.youtube.com/watch?v=rc27d61EDro">A demo of Croquet Microverse. (California Smalltalkers Meetupで行ったもの。英語です)</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="mieco">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./mieco.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>Mozilla Internet Ecosystem (2022-)</h4>
-			  <p>
-			      Mozillaが行っていた Mozilla Internet Ecosystem (MIECO)という試みに参加しました。MIECOは、インターネット上で人々を繋ぎ、創造活動や協調作業を進めようとしている人を援助するためのものです。私がやっていたCroquetやその以前からの仕事を見つけてもらえたのが幸運でした。ウェブサイトは<a href="https://future.mozilla.org/mieco">"future" .mozilla.org</a>ということで、MozillaもMIECOを重要視していることがわかると思います。
-			  </p>
-		      </div>
-		  </div>		  
+                  <div class="project" id="mieco">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./mieco.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>Mozilla Internet Ecosystem (2022-)</h4>
+                          <p>
+                              Mozillaが行っていた Mozilla Internet Ecosystem (MIECO)という試みに参加しました。MIECOは、インターネット上で人々を繋ぎ、創造活動や協調作業を進めようとしている人を援助するためのものです。私がやっていたCroquetやその以前からの仕事を見つけてもらえたのが幸運でした。ウェブサイトは<a href="https://future.mozilla.org/mieco">"future" .mozilla.org</a>ということで、MozillaもMIECOを重要視していることがわかると思います。
+                          </p>
+                      </div>
+                  </div>                  
 
                   <div class="project" id="substrate">
                       <div class="image-holder">
@@ -404,80 +404,80 @@ o			      <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kK
                           </ul>
                       </div>
                   </div>
-		  
+                  
               </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		  <h3 id="books">書籍など</h3>
-		  <div class="project" id="powerful-ideas">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./powerful-ideas.png"></img>
-		      </div>
-		      <div class="project-explanation">
-			  <h4>子どもの思考力を高める「スクイーク」 (2005)</h4>
-			  <p>
-			      『子どもの思考力を高める「スクイーク」』を翻訳するお手伝いをしました。この本はEtoysに関するものですが、対話的なコンピュータ環境を使うことによって強力なアイディアを教えることができる、ということを主題としています。例として、重力を階差的な繰り返しとして表現することにより、子供でも理解し操作できるような形で教えることができ、コンピュータによって実際に対話的に扱えるようになる、というものが挙げられます。
-			  </p>
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/dp/0974313106">原著"Powerful Ideas in the Classroom"のAmazon.comへのリンク</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/dp/4872902114">子どもの思考力を高める「スクイーク」のAmazon.co.jpへのリンク</a></li>
-			  </ul>
-		      </div>
-		  </div>
+              <div class="section">
+                  <h3 id="books">書籍など</h3>
+                  <div class="project" id="powerful-ideas">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./powerful-ideas.png"></img>
+                      </div>
+                      <div class="project-explanation">
+                          <h4>子どもの思考力を高める「スクイーク」 (2005)</h4>
+                          <p>
+                              『子どもの思考力を高める「スクイーク」』を翻訳するお手伝いをしました。この本はEtoysに関するものですが、対話的なコンピュータ環境を使うことによって強力なアイディアを教えることができる、ということを主題としています。例として、重力を階差的な繰り返しとして表現することにより、子供でも理解し操作できるような形で教えることができ、コンピュータによって実際に対話的に扱えるようになる、というものが挙げられます。
+                          </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/dp/0974313106">原著"Powerful Ideas in the Classroom"のAmazon.comへのリンク</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/dp/4872902114">子どもの思考力を高める「スクイーク」のAmazon.co.jpへのリンク</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-		  <div class="project" id="inventive-minds">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./inventive-minds.jpeg"></img>
-		      </div>
-		      <div  class="project-explanation">
-			  <h4>創造する心 (2020)</h4>
-			  <p>
-			      『Inventive Minds』という本を翻訳し、『創造する心』として出版しました。私は実は翻訳しただけにとどまらず、原著の方にも関わりました。この本はマービン・ミンスキー によるエッセイが6本、そしてそれぞれのエッセイごとにミンスキーと親しかった人が寄せた記事を集めたものです。Alanも記事を書いたのですが、紙で出版されるだけでは飽き足らず、コンピュータ上で実際に動かして試せるものにしたい、という意向があったので、Johnと共にAlanの記事の「アクティブ・エッセイ」版を作りました。その後で、古くからの友人<a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/%E9%98%BF%E9%83%A8-%E5%92%8C%E5%BA%83/e/B00DUV6S3E">阿部和広</a>さんが、オライリー・ジャパンとの仲を取り持ってくれ、私が翻訳も担当することになりました。
-			  </p>
+                  <div class="project" id="inventive-minds">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./inventive-minds.jpeg"></img>
+                      </div>
+                      <div  class="project-explanation">
+                          <h4>創造する心 (2020)</h4>
+                          <p>
+                              『Inventive Minds』という本を翻訳し、『創造する心』として出版しました。私は実は翻訳しただけにとどまらず、原著の方にも関わりました。この本はマービン・ミンスキー によるエッセイが6本、そしてそれぞれのエッセイごとにミンスキーと親しかった人が寄せた記事を集めたものです。Alanも記事を書いたのですが、紙で出版されるだけでは飽き足らず、コンピュータ上で実際に動かして試せるものにしたい、という意向があったので、Johnと共にAlanの記事の「アクティブ・エッセイ」版を作りました。その後で、古くからの友人<a target="_blank" rel="noopener noreferrer" href="https://www.amazon.co.jp/%E9%98%BF%E9%83%A8-%E5%92%8C%E5%BA%83/e/B00DUV6S3E">阿部和広</a>さんが、オライリー・ジャパンとの仲を取り持ってくれ、私が翻訳も担当することになりました。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://mitpress.mit.edu/books/inventive-minds">Inventive Minds (MIT Pressのサイト)</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.oreilly.co.jp/books/9784873119007/">創造する心 (オライリー・ジャパンのサイト)</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/tinkertoy/ja.html">アラン・ケイによるアクティブ・エッセイ</a></li>
-			  </ul>
-		      </div>
-		  </div>
-	  
-		  <div class="project" id="intelligent-archive">
-		      <div class="image-holder">
-			  <img class="project-thumbnail" src="./intelligent-archive.png"></img>
-		      </div>
-		      <div  class="project-explanation">
-			  <h4>Viewpoints Intelligent Archive (2018-)</h4>
-			  <p>
-			      私はコンピューティングの歴史に興味があります。Viewpointsは1970年代からのビデオテープを千本以上保存していました。多くのものはAlanの講演を記録したものですが、中にはApple ATGやWalt Disney Imagineeringの内部発表の記録などもあります。私はこれらのビデオ全てをデジタイズし(そして視聴し)、アーカイブしました。その動画の一部は私のYouTubeチャネルにアップロードされています。また、私は<a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>というサイトを管理しています。こちらはAlanの講演のビデオ、そしてAlanと元Viewpointsのメンバーによる論文がまとめられています。
-			  </p>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://mitpress.mit.edu/books/inventive-minds">Inventive Minds (MIT Pressのサイト)</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.oreilly.co.jp/books/9784873119007/">創造する心 (オライリー・ジャパンのサイト)</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/tinkertoy/ja.html">アラン・ケイによるアクティブ・エッセイ</a></li>
+                          </ul>
+                      </div>
+                  </div>
+          
+                  <div class="project" id="intelligent-archive">
+                      <div class="image-holder">
+                          <img class="project-thumbnail" src="./intelligent-archive.png"></img>
+                      </div>
+                      <div  class="project-explanation">
+                          <h4>Viewpoints Intelligent Archive (2018-)</h4>
+                          <p>
+                              私はコンピューティングの歴史に興味があります。Viewpointsは1970年代からのビデオテープを千本以上保存していました。多くのものはAlanの講演を記録したものですが、中にはApple ATGやWalt Disney Imagineeringの内部発表の記録などもあります。私はこれらのビデオ全てをデジタイズし(そして視聴し)、アーカイブしました。その動画の一部は私のYouTubeチャネルにアップロードされています。また、私は<a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>というサイトを管理しています。こちらはAlanの講演のビデオ、そしてAlanと元Viewpointsのメンバーによる論文がまとめられています。
+                          </p>
 
-			  <ul>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCkdJ2NwjI8LcgyvfU7PyaVA">大島のYouTubeチャネル</a></li>
-			      <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a></li>
-			      <li><a target="_blank" href="https://www.youtube.com/watch?v=1dqxRqubgW4">コンピューター界のパイオニアとコンピューティングの未来に関する講演</a></li>
-			  </ul>
-		      </div>
-		  </div>
-	      </div>
+                          <ul>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCkdJ2NwjI8LcgyvfU7PyaVA">大島のYouTubeチャネル</a></li>
+                              <li><a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a></li>
+                              <li><a target="_blank" href="https://www.youtube.com/watch?v=1dqxRqubgW4">コンピューター界のパイオニアとコンピューティングの未来に関する講演</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		  <h3 id="academic">学会活動</h3>
-		  <p>
-		      国際学会での論文発表と講演もそれなりにしてきました。また、プログラム委員としてもよく参加しています。
-		  </p>
-		  <p>
-		      論文のリストは<a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Boq_L4sAAAAJ&hl=ja&oi=ao">大島のGoogle Scholarページ</a>へのリンクで十分かと思いmす。また、論文の一部は<a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>にもあります。
-		  </p>
+              <div class="section">
+                  <h3 id="academic">学会活動</h3>
+                  <p>
+                      国際学会での論文発表と講演もそれなりにしてきました。また、プログラム委員としてもよく参加しています。
+                  </p>
+                  <p>
+                      論文のリストは<a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Boq_L4sAAAAJ&hl=ja&oi=ao">大島のGoogle Scholarページ</a>へのリンクで十分かと思いmす。また、論文の一部は<a target="_blank" rel="noopener noreferrer" href="https://tinlizzie.org/IA">Viewpoints Intelligent Archive</a>にもあります。
+                  </p>
 
-		  <p>
-		    2022年(令和4年)8月より、静岡大学大学院での客員教授の肩書をいただきました。これを実現してくださった皆様に感謝します。いろいろな機会が広がることを楽しみにしています。
-		  </p>
+                  <p>
+                    2022年(令和4年)8月より、静岡大学大学院での客員教授の肩書をいただきました。これを実現してくださった皆様に感謝します。いろいろな機会が広がることを楽しみにしています。
+                  </p>
 
                   <p>
                       私もそろそろ歳を取り、学会でのキーノート講演をときどき頼まれるようになってきました。2024年は、VISSOFTとSPLASH PAINTという会議でキーノートをしました。
@@ -488,127 +488,127 @@ o			      <li><a target="_blank" href="https://www.youtube.com/watch?v=E3og3l5kK
                       </ul>
                   </p>
 
-		  <p>
-		      以下は、プログラム委員として参加した会議のリストです。C5という会議はViewpointsが主催していたという意味で「内輪」のものではありましたが、その他の会議からの声がかかっているのは、私が書く査読が歴史的な経緯を踏まえ、また他の査読者とはちょっと違う視点から詳しく書かれたものとなっているからかなとは思っています。(こうやってまとめてみると、最近は自分の論文を発表するよりも査読をする方が多いのがバレてしまいますが。)
-		  </p>
-		  
-		  <ul>
-		      <li>The 6th International Conference on Creating, Connecting and Collaborating through Computing (2008)</li>
-		      <li>The 7th International Conference on Creating, Connecting and Collaborating through Computing (2009)</li>
-		      <li>The 8th International Conference on Creating, Connecting and Collaborating through Computing (2010)</li>
-		      <li>The 9th International Conference on Creating, Connecting and Collaborating through Computing (2011)</li>
-		      <li>The 10th International Conference on Creating, Connecting and Collaborating through Computing (2012)</li>
-		      <li>3rd International Workshop on Programming based on Actors, Agents, and Decentralized Control 2013</li>
-		      <li>Onward! Conference 2013</li>
-		      <li>Future of Programming Workshop 2015</li>
-		      <li>8th Workshop on Dynamic Languages and Applications 2014</li>
-		      <li>1st International Constrained and Reactive Objects Workshop 2016</li>
-		      <li>3th Workshop on Reactive and Event-based Languages & Systems 2017</li>
-		      <li>International Workshop on Smalltalk Technologies 2016</li>
-		      <li>Programming Experience Workshop 2016</li>
-		      <li>The 22nd International Conference on Distributed Multimedia Systems 2016</li>
-		      <li>Programming Experience Workshop 2017</li>
-		      <li>International Workshop on Smalltalk Technologies 2017</li>
-		      <li>4th Workshop on Reactive and Event-based Languages & Systems 2017</li>
-		      <li>Blocks and Beyond: 2nd Workshop on Lessons and Directions for First Programming Environments 2017</li>
-		      <li>Programming Experience Workshop 2017.2</li>
-		      <li>Programming Experience Workshop 2018</li>
-		      <li>5th Workshop on Reactive and Event-based Languages & Systems 2018</li>
-		      <li>Programming Experience Workshop 2019</li>
-		      <li>Blocks and Beyond 2019: Beyond Blocks</li>
-		      <li>6th Workshop on Reactive and Event-based Languages & Systems 2019</li>
-		      <li>Programming Experience Workshop 2020</li>
-		      <li>Symposium on Visual Languages and Human-Centric Computing 2020</li>
-		      <li>Onward! Conference 2020</li>
-		      <li>7th Workshop on Reactive and Event-based Languages & Systems 2020</li>
-		      <li>Programming Experience Workshop 2021</li>
-		      <li>8th Workshop on Reactive and Event-based Languages & Systems 2021</li>
-		      <li>Programming Experience Workshop 2022</li>
-		      <li>Workshop on Functional Art, Music, Modelling and Design (FARM 2022)</li>
-		      <li>Reactive and Event-based Languages & Systems 2022</li>
-		      <li>Programming Experience Workshop 2023</li>
-		      <li>Workshop on Functional Art, Music, Modelling and Design (FARM 2023)</li>
-		      <li>Programming Experience Workshop 2024</li>
+                  <p>
+                      以下は、プログラム委員として参加した会議のリストです。C5という会議はViewpointsが主催していたという意味で「内輪」のものではありましたが、その他の会議からの声がかかっているのは、私が書く査読が歴史的な経緯を踏まえ、また他の査読者とはちょっと違う視点から詳しく書かれたものとなっているからかなとは思っています。(こうやってまとめてみると、最近は自分の論文を発表するよりも査読をする方が多いのがバレてしまいますが。)
+                  </p>
+                  
+                  <ul>
+                      <li>The 6th International Conference on Creating, Connecting and Collaborating through Computing (2008)</li>
+                      <li>The 7th International Conference on Creating, Connecting and Collaborating through Computing (2009)</li>
+                      <li>The 8th International Conference on Creating, Connecting and Collaborating through Computing (2010)</li>
+                      <li>The 9th International Conference on Creating, Connecting and Collaborating through Computing (2011)</li>
+                      <li>The 10th International Conference on Creating, Connecting and Collaborating through Computing (2012)</li>
+                      <li>3rd International Workshop on Programming based on Actors, Agents, and Decentralized Control 2013</li>
+                      <li>Onward! Conference 2013</li>
+                      <li>Future of Programming Workshop 2015</li>
+                      <li>8th Workshop on Dynamic Languages and Applications 2014</li>
+                      <li>1st International Constrained and Reactive Objects Workshop 2016</li>
+                      <li>3th Workshop on Reactive and Event-based Languages & Systems 2017</li>
+                      <li>International Workshop on Smalltalk Technologies 2016</li>
+                      <li>Programming Experience Workshop 2016</li>
+                      <li>The 22nd International Conference on Distributed Multimedia Systems 2016</li>
+                      <li>Programming Experience Workshop 2017</li>
+                      <li>International Workshop on Smalltalk Technologies 2017</li>
+                      <li>4th Workshop on Reactive and Event-based Languages & Systems 2017</li>
+                      <li>Blocks and Beyond: 2nd Workshop on Lessons and Directions for First Programming Environments 2017</li>
+                      <li>Programming Experience Workshop 2017.2</li>
+                      <li>Programming Experience Workshop 2018</li>
+                      <li>5th Workshop on Reactive and Event-based Languages & Systems 2018</li>
+                      <li>Programming Experience Workshop 2019</li>
+                      <li>Blocks and Beyond 2019: Beyond Blocks</li>
+                      <li>6th Workshop on Reactive and Event-based Languages & Systems 2019</li>
+                      <li>Programming Experience Workshop 2020</li>
+                      <li>Symposium on Visual Languages and Human-Centric Computing 2020</li>
+                      <li>Onward! Conference 2020</li>
+                      <li>7th Workshop on Reactive and Event-based Languages & Systems 2020</li>
+                      <li>Programming Experience Workshop 2021</li>
+                      <li>8th Workshop on Reactive and Event-based Languages & Systems 2021</li>
+                      <li>Programming Experience Workshop 2022</li>
+                      <li>Workshop on Functional Art, Music, Modelling and Design (FARM 2022)</li>
+                      <li>Reactive and Event-based Languages & Systems 2022</li>
+                      <li>Programming Experience Workshop 2023</li>
+                      <li>Workshop on Functional Art, Music, Modelling and Design (FARM 2023)</li>
+                      <li>Programming Experience Workshop 2024</li>
                       <li>Programming Experience Workshop 2025</li>
-		  </ul>
-	      </div>
+                  </ul>
+              </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		<h3 id="other-work">その他の仕事</h3>
-		  <p>
-		    2021年9月より、<a href="https://www.kyototextlab.com/">株式会社京都テキストラボ</a>のアドバイザーを務めています。<a href="https://kyototextlab.org">こちらのサイト</a>で2023年3月から月刊でコンピューティングの歴史に関するエッセイを連載しています。
-		  </p>
+              <div class="section">
+                <h3 id="other-work">その他の仕事</h3>
+                  <p>
+                    2021年9月より、<a href="https://www.kyototextlab.com/">株式会社京都テキストラボ</a>のアドバイザーを務めています。<a href="https://kyototextlab.org">こちらのサイト</a>で2023年3月から月刊でコンピューティングの歴史に関するエッセイを連載しています。
+                  </p>
 
-	      </div>
+              </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		  <h3 id="education">学歴</h3>
-		  <p>
-		      以下が高等教育機関で取得した学位のリストです。
-		  </p>
+              <div class="section">
+                  <h3 id="education">学歴</h3>
+                  <p>
+                      以下が高等教育機関で取得した学位のリストです。
+                  </p>
 
-		  <ul>
-		      <li>1994年。東京工業大学 情報科学科。学士</li>
-		      <li>1996年。東京工業大学 数理・計算科学専攻。修士</li>
-		      <li>2006年。東京工業大学 数理・計算科学専攻。博士</li>
-		  </ul>
+                  <ul>
+                      <li>1994年。東京工業大学 情報科学科。学士</li>
+                      <li>1996年。東京工業大学 数理・計算科学専攻。修士</li>
+                      <li>2006年。東京工業大学 数理・計算科学専攻。博士</li>
+                  </ul>
 
-		  学士から博士まで同じ大学で、実は指導教官(佐々政孝教授)も同じです。海外ではやや珍しいことですが、日本ではよくありますね。博士課程は学位取得前に退学してしまったのですが、論文博士制度の恩恵を受け、もしそのまま残っていた場合にやっていたのとは違う題材で取得しました。
+                  学士から博士まで同じ大学で、実は指導教官(佐々政孝教授)も同じです。海外ではやや珍しいことですが、日本ではよくありますね。博士課程は学位取得前に退学してしまったのですが、論文博士制度の恩恵を受け、もしそのまま残っていた場合にやっていたのとは違う題材で取得しました。
 
-	      </div>
+              </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		  <h3 id="employment">職歴</h3>
-		  <p>
-		      以下のリストからは、私が頻繁に仕事を変えているようにも見えてしまいますが、実情はそういうわけではありません。Viewpoints Reearch、SAP LabsそしてY Combinator Researchは同じグループでまとまったままスポンサーが変わっていったものであり、同じ仲間で同じ目標を持って継続的に仕事をしていました。
-		  </p>
+              <div class="section">
+                  <h3 id="employment">職歴</h3>
+                  <p>
+                      以下のリストからは、私が頻繁に仕事を変えているようにも見えてしまいますが、実情はそういうわけではありません。Viewpoints Reearch、SAP LabsそしてY Combinator Researchは同じグループでまとまったままスポンサーが変わっていったものであり、同じ仲間で同じ目標を持って継続的に仕事をしていました。
+                  </p>
 
-		  <ul>
-		      <li>Computer Scientist at Croquet Corporation (2018 to present)</li>
-		      <li>Principal Investigator at Human Advancement Research Community (HARC), Y Combinator Research (2016 - 2017)</li>
-		      <li>Principal Investigator at Communications Design Group, SAP Labs (2014 - 2016)</li>
-		      <li>Researcher at Viewpoints Research Institute (2007 - 2014)</li>
-		      <li>Software Researcher and Developer at Twin Sun, Inc. (2002 - 2006)</li>
-		      <li>Intern and Technical Staff Member at Walt Disney Imagineering
+                  <ul>
+                      <li>Computer Scientist at Croquet Corporation (2018 to present)</li>
+                      <li>Principal Investigator at Human Advancement Research Community (HARC), Y Combinator Research (2016 - 2017)</li>
+                      <li>Principal Investigator at Communications Design Group, SAP Labs (2014 - 2016)</li>
+                      <li>Researcher at Viewpoints Research Institute (2007 - 2014)</li>
+                      <li>Software Researcher and Developer at Twin Sun, Inc. (2002 - 2006)</li>
+                      <li>Intern and Technical Staff Member at Walt Disney Imagineering
   R&D (2000 - 2002)</li>
-		  </ul>
+                  </ul>
 
-		  <p>
-		      これ以外にも、Vianaiやまた他の本の翻訳のようなパートタイプの仕事もやってきました。
-		  </p>
-	      </div>
+                  <p>
+                      これ以外にも、Vianaiやまた他の本の翻訳のようなパートタイプの仕事もやってきました。
+                  </p>
+              </div>
 
-	      <hr class="section-hr">
+              <hr class="section-hr">
 
-	      <div class="section">
-		  <h3 id="other">その他</h3>
-		  <p>
-		      スポーツは色々とやっていますが、バレーボールを一番真面目に取り組みました。中学生の時にはじめ、子供が生まれて自由が利かなくなるまでやりました。大学でも体育会系でした。オタクの理系の大学でしたが、結構マジでやっていました。
-		  </p>
-		  
-		  <p>
+              <div class="section">
+                  <h3 id="other">その他</h3>
+                  <p>
+                      スポーツは色々とやっていますが、バレーボールを一番真面目に取り組みました。中学生の時にはじめ、子供が生まれて自由が利かなくなるまでやりました。大学でも体育会系でした。オタクの理系の大学でしたが、結構マジでやっていました。
+                  </p>
+                  
+                  <p>
 日系人の子供を集めたサッカーチームのアシスタント・コーチをしてきました。U-9から初めてU-12、そしてU-15までやりましたが、2024年3月で卒業しました。
-		  </p>
+                  </p>
 
-		  <p>
-		      ロサンゼルスで土曜日に授業をしている日本人・日系人向けの学校でSTEMクラスを教えています。雑多な分野から自分の興味が湧いた題材を選び、コンピュータを使った対話的な説明も交えながら教えています。
+                  <p>
+                      ロサンゼルスで土曜日に授業をしている日本人・日系人向けの学校でSTEMクラスを教えています。雑多な分野から自分の興味が湧いた題材を選び、コンピュータを使った対話的な説明も交えながら教えています。
 
-		  </p>
+                  </p>
 
-		  <p>
-		      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/yoshikiohshima">Twitter</a>は平均すると一週間に一度くらい書く混んでいます。2019年には、<a target="_blank" rel="noopener noreferrer" href="https://jp.quora.com/profile/%E5%A4%A7%E5%B3%B6-%E8%8A%B3%E6%A8%B9-Yoshiki-Ohshima">Quora</a>に1日1回答をめどに書いていましたが、2020年は頻度がだいぶ下がっています。<a target="_blank" rel="noopener noreferrer" href="https://squeaker.hatenablog.com/">hatenaブログ</a>もあります。以前は毎日更新していました。が、こちらは休眠状態です。
-		      </p>
-	      </div>
+                  <p>
+                      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/yoshikiohshima">Twitter</a>は平均すると一週間に一度くらい書く混んでいます。2019年には、<a target="_blank" rel="noopener noreferrer" href="https://jp.quora.com/profile/%E5%A4%A7%E5%B3%B6-%E8%8A%B3%E6%A8%B9-Yoshiki-Ohshima">Quora</a>に1日1回答をめどに書いていましたが、2020年は頻度がだいぶ下がっています。<a target="_blank" rel="noopener noreferrer" href="https://squeaker.hatenablog.com/">hatenaブログ</a>もあります。以前は毎日更新していました。が、こちらは休眠状態です。
+                      </p>
+              </div>
 
-	      <hr>
-	      <div style="text-align: right">Last updated: 2025-05-06</div>
-	  </div>
+              <hr>
+              <div style="text-align: right">Last updated: 2025-05-06</div>
+          </div>
       </div>
   </body>
 </html>
